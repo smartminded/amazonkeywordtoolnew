@@ -142,14 +142,12 @@ export default function Navbar() {
                       <div className="space-y-4">
                         <p className="px-3 py-1 text-xs font-semibold text-gray-500">{t('navbar.nameGenerators')}</p>
                         {[
-                          { label: t('navbar.instagramNameGenerator'), href: t('links.instagramNameGenerator') },
                           { label: t('navbar.businessNameGenerator'), href: t('links.businessNameGenerator') },
                           { label: t('navbar.amazonNameGenerator'), href: t('links.amazonNameGenerator') },
                           { label: t('navbar.productNameGenerator'), href: t('links.productNameGenerator') },
                           { label: t('navbar.etsyNameGenerator'), href: t('links.etsyNameGenerator') },
                           { label: t('navbar.shopifyNameGenerator'), href: t('links.shopifyNameGenerator') },
                           { label: t('navbar.domainNameGenerator'), href: t('links.domainNameGenerator') },
-                          { label: t('navbar.youtubeNameGenerator'), href: t('links.youtubeNameGenerator') },
                         ].map((item) => (
                           <a
                             key={item.label}
@@ -396,14 +394,12 @@ export default function Navbar() {
                   <div className="border-t border-gray-200 pt-4">
                     <p className="px-3 py-1 text-xs font-semibold text-gray-500">{t('navbar.nameGenerators')}</p>
                     {[
-                      { label: t('navbar.instagramNameGenerator'), href: t('links.instagramNameGenerator') },
                       { label: t('navbar.businessNameGenerator'), href: t('links.businessNameGenerator') },
                       { label: t('navbar.amazonNameGenerator'), href: t('links.amazonNameGenerator') },
                       { label: t('navbar.productNameGenerator'), href: t('links.productNameGenerator') },
                       { label: t('navbar.etsyNameGenerator'), href: t('links.etsyNameGenerator') },
                       { label: t('navbar.shopifyNameGenerator'), href: t('links.shopifyNameGenerator') },
                       { label: t('navbar.domainNameGenerator'), href: t('links.domainNameGenerator') },
-                      { label: t('navbar.youtubeNameGenerator'), href: t('links.youtubeNameGenerator') },
                     ].map((item) => (
                       <a
                         key={item.label}
