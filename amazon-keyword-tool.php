@@ -89,20 +89,37 @@ class AmazonKeywordTool {
 
         $translations = array(
             'en' => array(
-                'title' => 'FREE Amazon Keyword Tool | Search Volume, CPC & Autosuggest',
-                'description' => 'Find high-performing Amazon keywords with our free keyword tool. Get search volume, competition, CPC, and live Amazon autosuggest across 22 marketplaces.'
+                'title'       => 'Amazon Keyword Tool | Free Search Volume & Trends [2026]',
+                'description' => 'Find high-volume search terms with our free Amazon Keyword Tool. Get search volume, trends and other data for hundreds of keywords.',
             ),
             'de' => array(
-                'title' => 'GRATIS Amazon Keyword Tool | Suchvolumen, CPC & Autosuggest',
-                'description' => 'Finde leistungsstarke Amazon-Keywords mit unserem kostenlosen Keyword-Tool. Suchvolumen, Wettbewerb, CPC und Live-Autosuggest für 22 Marktplätze.'
-            )
+                'title'       => 'Amazon Keyword Tool: Suchvolumen & Trends Gratis [2026]',
+                'description' => 'Finde Amazon Keywords mit hohem Suchvolumen mit unserem kostenlosen Tool. Suchvolumen, Trends 2026 und Daten für hunderte Keywords.',
+            ),
+            'fr' => array(
+                'title'       => 'Outil Mots-Clés Amazon : Volume & Tendances [2026]',
+                'description' => "Trouvez des mots-clés Amazon à fort volume avec notre outil gratuit. Accédez au volume, aux tendances 2026 et boostez votre SEO en un clic.",
+            ),
+            'it' => array(
+                'title'       => 'Amazon Keyword Tool: Volume e Trend Gratis [2026]',
+                'description' => 'Trova parole chiave ad alto volume con il nostro Amazon Keyword Tool gratis. Ottieni volumi, trend 2026 e dati strategici per centinaia di keyword.',
+            ),
+            'es' => array(
+                'title'       => 'Amazon Keyword Tool: Volumen y Tendencias Gratis [2026]',
+                'description' => 'Encuentra palabras clave Amazon de alto volumen con nuestro Amazon Keyword Tool gratis. Volumen, tendencias 2026 y datos para cientos de keywords.',
+            ),
+            'pt' => array(
+                'title'       => 'Amazon Keyword Tool: Volume e Tendências Grátis [2026]',
+                'description' => 'Encontre palavras-chave Amazon de alto volume com nossa ferramenta gratuita. Volume, tendências 2026 e dados estratégicos para centenas de keywords.',
+            ),
         );
 
         $current_trans = isset($translations[$lang]) ? $translations[$lang] : $translations['en'];
         $page_title = $current_trans['title'];
         $page_description = $current_trans['description'];
 
-        $og_image = plugins_url('src/assets/Amazon_Keyword_Tool.png', __FILE__);
+        // Hosted production OG image (uploaded outside the plugin so it survives plugin updates).
+        $og_image = 'https://www.smart-minded.com/wp-content/uploads/2025/09/Amazon-Keyword-Tool.jpg';
 
         ?>
         <!DOCTYPE html>
@@ -135,6 +152,10 @@ class AmazonKeywordTool {
 
             <link rel="alternate" hreflang="en" href="<?php echo esc_url(home_url('/en/amazon-keyword-tool/')); ?>">
             <link rel="alternate" hreflang="de" href="<?php echo esc_url(home_url('/amazon-keyword-tool/')); ?>">
+            <link rel="alternate" hreflang="fr" href="<?php echo esc_url(home_url('/fr/amazon-keyword-tool/')); ?>">
+            <link rel="alternate" hreflang="it" href="<?php echo esc_url(home_url('/it/amazon-keyword-tool/')); ?>">
+            <link rel="alternate" hreflang="es" href="<?php echo esc_url(home_url('/es/amazon-keyword-tool/')); ?>">
+            <link rel="alternate" hreflang="pt" href="<?php echo esc_url(home_url('/pt/amazon-keyword-tool/')); ?>">
             <link rel="alternate" hreflang="x-default" href="<?php echo esc_url(home_url('/en/amazon-keyword-tool/')); ?>">
 
             <link rel="preload" href="<?php echo plugins_url('assets/css/app.css', __FILE__); ?>" as="style">
@@ -153,7 +174,7 @@ class AmazonKeywordTool {
                     'operatingSystem' => 'All',
                     'description' => $page_description,
                     'datePublished' => '2026-05-04',
-                    'dateModified' => '2026-05-04',
+                    'dateModified' => '2026-05-11',
                     'inLanguage' => $lang,
                     'offers' => array(
                         '@type' => 'Offer',

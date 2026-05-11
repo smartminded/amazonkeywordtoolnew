@@ -32,7 +32,7 @@ function App() {
               <Sparkles className="h-3 w-3" />
               {t('hero.eyebrow')}
             </span>
-            <h1 className="text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:whitespace-nowrap sm:text-3xl md:text-4xl lg:text-5xl">
+            <h1 className="text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
               <span className="bg-gradient-to-br from-gray-900 via-gray-900 to-primary-700 bg-clip-text text-transparent">
                 {t('hero.title')}
               </span>

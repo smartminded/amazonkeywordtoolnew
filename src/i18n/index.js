@@ -3,8 +3,12 @@ import { initReactI18next } from 'react-i18next';
 
 import en from './locales/en.json';
 import de from './locales/de.json';
+import fr from './locales/fr.json';
+import it from './locales/it.json';
+import es from './locales/es.json';
+import pt from './locales/pt.json';
 
-const SUPPORTED = ['en', 'de'];
+const SUPPORTED = ['en', 'de', 'fr', 'it', 'es', 'pt'];
 
 const getInitialLanguage = () => {
   if (typeof window === 'undefined') return 'en';
@@ -39,6 +43,10 @@ i18n
     resources: {
       en: { translation: en },
       de: { translation: de },
+      fr: { translation: fr },
+      it: { translation: it },
+      es: { translation: es },
+      pt: { translation: pt },
     },
     lng: getInitialLanguage(),
     fallbackLng: 'en',

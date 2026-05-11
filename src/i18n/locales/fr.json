@@ -1,0 +1,240 @@
+{
+  "links": {
+    "home": "https://www.smart-minded.com/fr/",
+    "blog": "https://www.smart-minded.com/fr/blog/",
+    "about": "https://www.smart-minded.com/fr/a-propos-de-nous/",
+    "contact": "https://www.smart-minded.com/fr/mentions-legales/",
+    "terms": "https://www.smart-minded.com/fr/conditions-generales-de-vente/",
+    "privacy": "https://www.smart-minded.com/fr/protection-des-donnees/",
+    "affiliate": "https://www.smart-minded.com/fr/clause-de-non-responsabilite/",
+    "keywordTool": "#",
+    "salesEstimator": "https://www.smart-minded.com/fr/amazon-sales-estimator/",
+    "trendingProducts": "https://www.smart-minded.com/fr/amazon-trending-products/",
+    "searchFunnelAnalyzer": "https://www.smart-minded.com/fr/amazon-ppc-audit-tool/",
+    "randomProductFinder": "https://www.smart-minded.com/fr/random-amazon-product-generator/",
+    "productDescriptionEditor": "https://www.smart-minded.com/fr/amazon-product-description-editor/",
+    "instagramNameGenerator": "https://www.smart-minded.com/fr/generateur-de-pseudo-instagram/",
+    "businessNameGenerator": "https://www.smart-minded.com/fr/generateur-de-nom-d-entreprise/",
+    "amazonNameGenerator": "https://www.smart-minded.com/fr/generateur-de-nom-de-magasin-amazon/",
+    "productNameGenerator": "https://www.smart-minded.com/fr/generateur-de-nom-de-produit/",
+    "etsyNameGenerator": "https://www.smart-minded.com/fr/generateur-de-nom-de-boutique-etsy/",
+    "shopifyNameGenerator": "https://www.smart-minded.com/fr/generateur-de-nom-shopify/",
+    "domainNameGenerator": "https://www.smart-minded.com/fr/generateur-nom-de-domaine/",
+    "youtubeNameGenerator": "https://www.smart-minded.com/fr/generateur-de-nom-youtube/",
+    "amazonFbaExplanation": "https://www.smart-minded.com/fr/blog/amazon-fba/",
+    "becomeAmazonSeller": "https://www.smart-minded.com/en/business/how-to-become-an-amazon-seller/",
+    "whatToSell": "https://www.smart-minded.com/en/business/what-to-sell-on-amazon/",
+    "allGuides": "https://www.smart-minded.com/fr/guides-pour-les-amazon-sellers/",
+    "bestAmazonTools": "https://www.smart-minded.com/fr/blog/amazon-seller-tools/",
+    "jungleScoutReview": "https://www.smart-minded.com/fr/blog/jungle-scout/",
+    "helium10Review": "https://www.smart-minded.com/fr/blog/helium-10/",
+    "allReviews": "https://www.smart-minded.com/fr/amazon-tools-reviews/",
+    "jungleScoutDiscount": "https://www.smart-minded.com/fr/blog/jungle-scout-discount/",
+    "helium10Coupon": "https://www.smart-minded.com/fr/blog/helium-10-coupons/",
+    "business": "https://www.smart-minded.com/fr/blog/"
+  },
+  "hero": {
+    "eyebrow": "Gratuit · Sans inscription",
+    "title": "Trouvez les meilleurs mots-clés Amazon"
+  },
+  "tabs": {
+    "ideas": "Trouver des idées de mots-clés",
+    "product": "Trouver les mots-clés d'un produit"
+  },
+  "tool": {
+    "marketplace": "Marketplace",
+    "search": "Rechercher",
+    "loading": "Cela peut prendre un moment — nous récupérons les données en direct les plus précises...",
+    "seed": {
+      "label": "Mot-clé de départ",
+      "placeholder": "ex. écouteurs sans fil"
+    },
+    "asin": {
+      "label": "ASIN Amazon",
+      "placeholder": "B0XXXXXXXX",
+      "invalid": "L'ASIN doit contenir 10 caractères alphanumériques."
+    },
+    "competition": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "high": "Forte"
+    },
+    "marketSize": {
+      "huge": "Très grand",
+      "large": "Grand",
+      "medium": "Moyen",
+      "small": "Petit"
+    },
+    "filters": {
+      "competition": "Concurrence",
+      "searchVolume": "Volume de recherche",
+      "marketSize": "Taille du marché",
+      "min": "Min",
+      "max": "Max",
+      "all": "Tous"
+    },
+    "table": {
+      "keyword": "Mot-clé",
+      "searchVolume": "Volume de recherche",
+      "competition": "Concurrence",
+      "trend": "Tendance",
+      "cpc": "CPC",
+      "marketSize": "Taille du marché",
+      "selectAll": "Tout sélectionner",
+      "fromAutosuggest": "Autosuggest",
+      "summary": "{{count}} sur {{total}} mots-clés affichés · {{selected}} sélectionnés",
+      "exportAll": "Exporter en CSV",
+      "exportSelected": "Exporter {{count}} sélectionnés",
+      "noMatches": "Aucun mot-clé ne correspond aux filtres actuels.",
+      "pageRange": "{{from}}–{{to}} sur {{total}}",
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "empty": {
+      "title": "Aucun mot-clé trouvé",
+      "body": "Nous n'avons trouvé aucun mot-clé pour cette requête sur ce marketplace. Essayez un mot-clé plus large ou un autre marketplace.",
+      "retry": "Réessayer"
+    },
+    "error": {
+      "generic": {
+        "title": "Une erreur est survenue",
+        "body": "Impossible de récupérer les données. Vos saisies sont conservées — veuillez réessayer."
+      },
+      "rate_limit": {
+        "title": "Limite atteinte",
+        "body": "Nos fournisseurs de données ont temporairement limité la requête. Patientez un instant et réessayez."
+      },
+      "credentials": {
+        "title": "Identifiants API manquants",
+        "body": "L'outil a besoin des identifiants DataForSEO et Rainforest pour récupérer les données en direct."
+      }
+    },
+    "warning": {
+      "title": "Résultats partiels",
+      "AUTOCOMPLETE_FAILED": "Nous avons chargé le jeu de mots-clés de base, mais l'autosuggest live d'Amazon n'a pas répondu — les résultats viennent uniquement de DataForSEO.",
+      "RATE_LIMITED": "L'autosuggest live d'Amazon a atteint une limite avant la fin de l'expansion. Affichage du jeu partiel disponible.",
+      "METRICS_PARTIAL": "Certains mots-clés issus de l'autosuggest n'ont pas de métriques — ils ont été ajoutés mais l'enrichissement n'a pas abouti."
+    }
+  },
+  "partner": {
+    "eyebrow": "Partenaire",
+    "copy": "Essayez les meilleurs outils mots-clés Amazon de notre Partenaire Helium 10.",
+    "cta": "Essayer gratuitement"
+  },
+  "gate": {
+    "title": "Débloquez les recherches illimitées",
+    "body": "Vous avez utilisé vos 5 recherches gratuites. Inscrivez-vous avec votre e-mail pour continuer, ou revenez la semaine prochaine.",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "unlockCta": "Débloquer les recherches illimitées",
+    "submitting": "Déblocage…",
+    "waitNote": "L'accès gratuit reprend le {{date}}.",
+    "close": "Fermer",
+    "error": {
+      "invalid": "Veuillez saisir une adresse e-mail valide.",
+      "generic": "Une erreur est survenue — veuillez réessayer."
+    }
+  },
+  "cta": {
+    "title": "En savoir plus sur la vente sur Amazon",
+    "subtitle": "Découvrez des stratégies d'experts, des guides détaillés et des tactiques éprouvées pour développer votre business Amazon. Lisez nos derniers articles et gardez une longueur d'avance.",
+    "button": "Lire notre blog"
+  },
+  "content": {
+    "s1": {
+      "h": "Trouvez les meilleurs mots-clés pour vos produits Amazon",
+      "p1": "Vous ne savez pas ce que les acheteurs tapent dans la barre de recherche Amazon pour trouver vos produits ? Aucun problème avec notre outil de mots-clés Amazon gratuit.",
+      "p2": "Vous pouvez utiliser la fonctionnalité <b>Trouver des idées de mots-clés</b> de notre outil et saisir un mot-clé de départ pour obtenir des centaines d'idées... ou rechercher les mots-clés pour lesquels d'autres produits Amazon sont positionnés. Pour cela, saisissez l'ASIN d'un produit Amazon et découvrez tous les mots-clés pour lesquels il se classe.",
+      "p3": "Pour chaque mot-clé, vous obtenez le volume de recherche, le niveau de concurrence, les tendances et le CPC. Que vous planifiiez votre future stratégie de mots-clés ou optimisiez une campagne PPC en cours, notre outil est de loin le plus complet des outils mots-clés Amazon <b>gratuits</b>.",
+      "imgAlt": "Résultats de l'outil de mots-clés Amazon"
+    },
+    "s2": {
+      "h": "Des métriques précises pour des mots-clés à fort potentiel",
+      "p1": "Pour réussir sur Amazon, il faut trouver des mots-clés à faible concurrence et fort taux de conversion. Imaginez que vous vendez une gourde bleue. Les personnes qui cherchent « gourde bleue » seront probablement plus enclines à acheter que celles qui cherchent simplement « gourde ».",
+      "p2": "Utilisez notre outil intelligemment et trouvez des mots-clés Amazon aussi spécifiques que possible — ce sont eux qui amèneront de vrais clients à votre business.",
+      "p3": "En plus de cela, utilisez nos métriques pour identifier les mots-clés à faible concurrence. Consultez par exemple notre indicateur de concurrence qui vous indique si un mot-clé a une concurrence « Faible », « Moyenne » ou « Forte ». Un excellent point de départ pour votre recherche de mots-clés Amazon.",
+      "imgAlt": "Filtres de l'outil de mots-clés Amazon"
+    },
+    "s3": {
+      "h": "Des données précises sur le volume de recherche des mots-clés",
+      "p1": "Si vous recherchez des mots-clés Amazon, vous voulez évidemment savoir à quelle fréquence ils sont recherchés chaque mois. Un mot-clé recherché 10 fois par mois compte moins pour votre business qu'un mot-clé recherché 100 ou 1000 fois.",
+      "p2": "Mais le volume de recherche n'est pas le seul critère important. La taille du marché compte aussi : si un mot-clé ne génère pas de ventes, il n'apporte rien. Assurez-vous donc d'utiliser des mots-clés à taille de marché correcte qui génèrent des ventes — jetez un œil à notre indicateur de taille de marché.",
+      "imgAlt": "Métriques de l'outil de mots-clés Amazon"
+    },
+    "s4": {
+      "h": "Découvrez les mots-clés pour lesquels vos concurrents se positionnent",
+      "p1": "Avec notre <b>outil de mots-clés Amazon</b>, vous pouvez non seulement trouver des mots-clés à partir d'un mot de départ, mais aussi découvrir ceux pour lesquels vos concurrents sont positionnés. Il vous suffit de saisir l'ASIN d'un produit Amazon et l'outil affichera tous les mots-clés pour lesquels ce produit se classe.",
+      "imgAlt": "Listing Amazon optimisé"
+    },
+    "s5": {
+      "h": "Faites votre recherche de mots-clés sur presque tous les marketplaces",
+      "p1": "Votre business ne devrait pas être limité par les frontières. Que vous développiez votre activité Amazon sur des marchés établis comme les États-Unis ou que vous vous lanciez sur des marchés émergents, notre outil vous fournit les données nécessaires.",
+      "p2": "Avec la prise en charge de <b>22 marketplaces Amazon</b>, notre outil vous donne un avantage concurrentiel en révélant ce que recherchent les clients, peu importe où ils se trouvent dans le monde.",
+      "imgAlt": "Marketplaces Amazon"
+    },
+    "s6": {
+      "h": "Exportez les résultats de vos recherches de mots-clés",
+      "p1": "Ne perdez plus jamais d'insights précieux. Grâce à notre fonctionnalité d'export intégrée, sauvegardez vos mots-clés pour vos prochaines sessions stratégiques ou exportez-les vers d'autres outils tiers.",
+      "p2": "Que vous ayez besoin d'une sélection spécifique ou de tous vos mots-clés, deux options s'offrent à vous : cochez ceux qui vous intéressent pour un export personnalisé, ou téléchargez la liste complète en un clic.",
+      "imgAlt": "Export des résultats de mots-clés"
+    },
+    "s7": {
+      "h": "Optimisez les titres, descriptions et bullet points de vos listings",
+      "p1": "Notre outil ne se limite pas à trouver des mots-clés. Que vous ayez besoin d'un nouveau titre produit, d'une description ou de bullet points pour votre listing, notre générateur de listing peut tout produire.",
+      "p2": "Il vous suffit de sélectionner les mots-clés sur lesquels vous voulez optimiser votre contenu et de saisir quelques informations sur votre produit. Laissez ensuite l'outil travailler et obtenez un titre, une description ou des bullet points entièrement optimisés.",
+      "imgAlt": "Générateur de listing"
+    }
+  },
+  "footer": {
+    "tagline": "Guides d'affaires en ligne de premier niveau et critiques de logiciels.",
+    "company": "Entreprise",
+    "blog": "Blog",
+    "about": "À propos",
+    "contact": "Contact",
+    "legal": "Mentions légales",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "affiliate": "Avertissement d'affiliation",
+    "connect": "Connexion",
+    "language": "Langue",
+    "copyright": "Copyright 2026 · SMARTMINDED"
+  },
+  "navbar": {
+    "freeTools": "Outils Gratuits",
+    "guides": "Guides",
+    "reviews": "Avis",
+    "coupons": "Coupons",
+    "blog": "Blog",
+    "amazonSellerTools": "OUTILS VENDEUR AMAZON",
+    "nameGenerators": "GÉNÉRATEURS DE NOMS",
+    "keywordTool": "Outil de Mots-Clés Amazon",
+    "keywordToolDesc": "Trouvez les meilleurs mots-clés pour vos produits.",
+    "salesEstimator": "Estimateur de Ventes Amazon",
+    "salesEstimatorDesc": "Estimez les ventes à partir des données BSR.",
+    "trendingProducts": "Produits Tendance Amazon",
+    "trendingProductsDesc": "Découvrez les produits bestsellers.",
+    "searchFunnelAnalyzer": "Amazon PPC Auditor",
+    "searchFunnelAnalyzerDesc": "Analysez vos campagnes PPC.",
+    "randomProductFinder": "Random Product Generator",
+    "randomProductFinderDesc": "Découvrez des idées de produits aléatoires.",
+    "productDescriptionEditor": "Product Description Generator",
+    "productDescriptionEditorDesc": "Créez des descriptions de produits en HTML.",
+    "instagramNameGenerator": "Générateur de Nom Instagram",
+    "businessNameGenerator": "Générateur de Nom d'Entreprise",
+    "amazonNameGenerator": "Générateur de Nom Amazon",
+    "productNameGenerator": "Générateur de Nom de Produit",
+    "etsyNameGenerator": "Générateur de Nom de Boutique Etsy",
+    "shopifyNameGenerator": "Générateur de Nom Shopify",
+    "domainNameGenerator": "Générateur de Nom de Domaine",
+    "youtubeNameGenerator": "Générateur de Nom YouTube",
+    "amazonFbaExplanation": "Explication Amazon FBA",
+    "becomeAmazonSeller": "Devenir Vendeur Amazon",
+    "whatToSell": "Quoi Vendre sur Amazon",
+    "allArticles": "Tous les Articles →",
+    "bestAmazonTools": "Meilleurs Outils Vendeur Amazon",
+    "jungleScoutReview": "Avis Jungle Scout",
+    "helium10Review": "Avis Helium 10",
+    "jungleScoutCoupons": "Coupons Jungle Scout",
+    "helium10Coupons": "Coupons Helium 10"
+  }
+}

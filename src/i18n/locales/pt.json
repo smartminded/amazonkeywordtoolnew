@@ -1,0 +1,240 @@
+{
+  "links": {
+    "home": "https://www.smart-minded.com/pt/",
+    "blog": "https://www.smart-minded.com/pt/blog/",
+    "about": "https://www.smart-minded.com/pt/sobre-nos/",
+    "contact": "https://www.smart-minded.com/pt/impressao/",
+    "terms": "https://www.smart-minded.com/pt/termos-e-condicoes-gerais/",
+    "privacy": "https://www.smart-minded.com/pt/protecao-de-dados/",
+    "affiliate": "https://www.smart-minded.com/pt/isencao-de-responsabilidade/",
+    "keywordTool": "#",
+    "salesEstimator": "https://www.smart-minded.com/pt/amazon-sales-estimator/",
+    "trendingProducts": "https://www.smart-minded.com/pt/amazon-trending-products/",
+    "searchFunnelAnalyzer": "https://www.smart-minded.com/pt/amazon-ppc-audit-tool/",
+    "randomProductFinder": "https://www.smart-minded.com/pt/random-amazon-product-generator/",
+    "productDescriptionEditor": "https://www.smart-minded.com/pt/amazon-product-description-editor/",
+    "instagramNameGenerator": "https://www.smart-minded.com/pt/gerador-de-nomes-para-instagram/",
+    "businessNameGenerator": "https://www.smart-minded.com/pt/nome-da-empresa-gerador/",
+    "amazonNameGenerator": "https://www.smart-minded.com/pt/gerador-de-nomes-para-um-negocio-da-amazon/",
+    "productNameGenerator": "https://www.smart-minded.com/pt/gerador-de-nomes-de-produtos/",
+    "etsyNameGenerator": "https://www.smart-minded.com/pt/gerador-de-nomes-para-lojas-etsy/",
+    "shopifyNameGenerator": "https://www.smart-minded.com/pt/gerador-de-nomes-da-shopify/",
+    "domainNameGenerator": "https://www.smart-minded.com/pt/gerador-de-dominios/",
+    "youtubeNameGenerator": "https://www.smart-minded.com/pt/gerador-de-nomes-do-youtube/",
+    "amazonFbaExplanation": "https://www.smart-minded.com/pt/blog/amazon-fba/",
+    "becomeAmazonSeller": "https://www.smart-minded.com/en/business/how-to-become-an-amazon-seller/",
+    "whatToSell": "https://www.smart-minded.com/en/business/what-to-sell-on-amazon/",
+    "allGuides": "https://www.smart-minded.com/pt/guias-para-amazon-sellers/",
+    "bestAmazonTools": "https://www.smart-minded.com/pt/blog/amazon-seller-tools/",
+    "jungleScoutReview": "https://www.smart-minded.com/pt/blog/jungle-scout/",
+    "helium10Review": "https://www.smart-minded.com/pt/blog/helium-10/",
+    "allReviews": "https://www.smart-minded.com/pt/comentarios-sobre-a-amazon-tool/",
+    "jungleScoutDiscount": "https://www.smart-minded.com/pt/blog/jungle-scout-discount/",
+    "helium10Coupon": "https://www.smart-minded.com/pt/blog/helium-10-coupons/",
+    "business": "https://www.smart-minded.com/pt/blog/"
+  },
+  "hero": {
+    "eyebrow": "Gratuito · Sem cadastro",
+    "title": "Encontre as melhores palavras-chave da Amazon"
+  },
+  "tabs": {
+    "ideas": "Buscar ideias de palavras-chave",
+    "product": "Buscar palavras-chave de produto"
+  },
+  "tool": {
+    "marketplace": "Marketplace",
+    "search": "Buscar",
+    "loading": "Isto pode demorar um pouco — estamos buscando os dados ao vivo mais precisos...",
+    "seed": {
+      "label": "Palavra-chave inicial",
+      "placeholder": "ex. fones sem fio"
+    },
+    "asin": {
+      "label": "ASIN da Amazon",
+      "placeholder": "B0XXXXXXXX",
+      "invalid": "O ASIN deve ter 10 caracteres alfanuméricos."
+    },
+    "competition": {
+      "low": "Baixa",
+      "medium": "Média",
+      "high": "Alta"
+    },
+    "marketSize": {
+      "huge": "Enorme",
+      "large": "Grande",
+      "medium": "Médio",
+      "small": "Pequeno"
+    },
+    "filters": {
+      "competition": "Concorrência",
+      "searchVolume": "Volume de busca",
+      "marketSize": "Tamanho do mercado",
+      "min": "Mín",
+      "max": "Máx",
+      "all": "Todos"
+    },
+    "table": {
+      "keyword": "Palavra-chave",
+      "searchVolume": "Volume de busca",
+      "competition": "Concorrência",
+      "trend": "Tendência",
+      "cpc": "CPC",
+      "marketSize": "Tamanho do mercado",
+      "selectAll": "Selecionar tudo",
+      "fromAutosuggest": "Autosuggest",
+      "summary": "Mostrando {{count}} de {{total}} palavras-chave · {{selected}} selecionadas",
+      "exportAll": "Exportar CSV",
+      "exportSelected": "Exportar {{count}} selecionadas",
+      "noMatches": "Nenhuma palavra-chave corresponde aos filtros atuais.",
+      "pageRange": "{{from}}–{{to}} de {{total}}",
+      "prev": "Anterior",
+      "next": "Próximo"
+    },
+    "empty": {
+      "title": "Nenhuma palavra-chave encontrada",
+      "body": "Não encontramos palavras-chave para essa busca neste marketplace. Tente um termo mais amplo ou outro marketplace.",
+      "retry": "Tentar novamente"
+    },
+    "error": {
+      "generic": {
+        "title": "Algo deu errado",
+        "body": "Não foi possível buscar os dados. Suas entradas estão preservadas — tente novamente."
+      },
+      "rate_limit": {
+        "title": "Limite atingido",
+        "body": "Nossos provedores de dados limitaram temporariamente a solicitação. Aguarde um momento e tente novamente."
+      },
+      "credentials": {
+        "title": "Credenciais da API ausentes",
+        "body": "A ferramenta precisa das credenciais do DataForSEO e do Rainforest para buscar dados ao vivo."
+      }
+    },
+    "warning": {
+      "title": "Resultados parciais",
+      "AUTOCOMPLETE_FAILED": "Carregamos o conjunto base de palavras-chave, mas o autosuggest ao vivo da Amazon não respondeu — os resultados vêm apenas do DataForSEO.",
+      "RATE_LIMITED": "O autosuggest ao vivo da Amazon atingiu um limite antes da expansão completa. Mostrando o conjunto parcial disponível.",
+      "METRICS_PARTIAL": "Algumas palavras-chave do autosuggest estão sem métricas — foram incluídas, mas o enriquecimento não foi concluído."
+    }
+  },
+  "partner": {
+    "eyebrow": "Parceiro",
+    "copy": "Experimente as melhores ferramentas de palavras-chave da Amazon do nosso Parceiro Helium 10.",
+    "cta": "Teste grátis"
+  },
+  "gate": {
+    "title": "Desbloqueie buscas ilimitadas",
+    "body": "Você usou suas 5 buscas gratuitas. Cadastre-se com seu e-mail para continuar buscando, ou volte na próxima semana.",
+    "emailLabel": "Endereço de e-mail",
+    "emailPlaceholder": "voce@exemplo.com",
+    "unlockCta": "Desbloquear buscas ilimitadas",
+    "submitting": "Desbloqueando…",
+    "waitNote": "O acesso gratuito é retomado em {{date}}.",
+    "close": "Fechar",
+    "error": {
+      "invalid": "Por favor, insira um endereço de e-mail válido.",
+      "generic": "Algo deu errado — tente novamente."
+    }
+  },
+  "cta": {
+    "title": "Saiba mais sobre vender na Amazon",
+    "subtitle": "Descubra estratégias de especialistas, guias detalhados e táticas comprovadas para fazer seu negócio na Amazon crescer. Leia nossos artigos mais recentes e mantenha-se à frente da concorrência.",
+    "button": "Ler nosso blog"
+  },
+  "content": {
+    "s1": {
+      "h": "Encontre as melhores palavras-chave para seus produtos na Amazon",
+      "p1": "Não sabe o que as pessoas digitam na barra de busca da Amazon para encontrar os produtos que você vende? Sem problema com a nossa ferramenta de palavras-chave da Amazon gratuita.",
+      "p2": "Você pode usar a função <b>Buscar ideias de palavras-chave</b> da nossa ferramenta e digitar uma palavra-chave inicial para receber centenas de ideias... ou pode buscar as palavras-chave pelas quais outros produtos da Amazon estão ranqueando. Para isso, digite o ASIN de qualquer produto da Amazon e veja todas as palavras-chave pelas quais ele ranqueia.",
+      "p3": "Para cada palavra-chave você verá volume de busca, nível de concorrência, dados de tendência e valores de CPC. Quer planejar sua futura estratégia de palavras-chave ou otimizar uma campanha PPC em andamento, nossa ferramenta é de longe a mais completa entre as ferramentas <b>gratuitas</b> de palavras-chave para a Amazon.",
+      "imgAlt": "Resultados da ferramenta de palavras-chave da Amazon"
+    },
+    "s2": {
+      "h": "Métricas precisas para encontrar palavras-chave de alto potencial",
+      "p1": "Para ter sucesso na Amazon, você precisa encontrar palavras-chave com baixa concorrência e alta taxa de conversão. Imagine que você vende uma garrafa azul. Quem busca por «garrafa azul» tende a comprar mais do que quem busca apenas por «garrafa».",
+      "p2": "Use nossa ferramenta com inteligência e tente encontrar palavras-chave Amazon o mais específicas possível, pois são essas que realmente trarão clientes para seu negócio.",
+      "p3": "Além disso, use nossas métricas para encontrar palavras-chave com baixa concorrência. Confira por exemplo nosso indicador de concorrência, que mostra se uma palavra-chave tem concorrência «Baixa», «Média» ou «Alta». Um ótimo ponto de partida para sua pesquisa de palavras-chave na Amazon.",
+      "imgAlt": "Filtros da ferramenta de palavras-chave da Amazon"
+    },
+    "s3": {
+      "h": "Dados precisos sobre o volume de busca das palavras-chave",
+      "p1": "Se você está em busca de palavras-chave da Amazon, certamente quer saber com que frequência elas são buscadas a cada mês. Uma palavra-chave buscada apenas 10 vezes por mês pode valer menos para seu negócio do que uma buscada 100 ou 1000 vezes.",
+      "p2": "Mas não é só o volume de busca que importa. O tamanho do mercado também é fundamental: se uma palavra-chave não gera vendas, ela não serve para o seu negócio. Certifique-se de usar palavras-chave com um tamanho de mercado razoável que gerem vendas — confira nosso indicador de tamanho de mercado.",
+      "imgAlt": "Métricas da ferramenta de palavras-chave da Amazon"
+    },
+    "s4": {
+      "h": "Descubra as palavras-chave pelas quais seus concorrentes ranqueiam",
+      "p1": "Com nossa <b>ferramenta de palavras-chave da Amazon</b> você não só encontra palavras-chave a partir de um termo inicial, como também descobre aquelas pelas quais seus concorrentes estão ranqueando. Basta digitar o ASIN de um produto da Amazon e a ferramenta mostrará todas as palavras-chave pelas quais ele ranqueia.",
+      "imgAlt": "Listing da Amazon otimizado"
+    },
+    "s5": {
+      "h": "Faça pesquisa de palavras-chave em quase todos os marketplaces",
+      "p1": "Seu negócio não precisa ser limitado por fronteiras. Quer você esteja escalando seu negócio Amazon em mercados estabelecidos como os EUA ou entrando em mercados emergentes, nossa ferramenta fornece os dados de que você precisa.",
+      "p2": "Com suporte para <b>22 marketplaces da Amazon</b>, nossa ferramenta lhe dá uma vantagem competitiva ao revelar o que os clientes buscam na Amazon, não importa onde estejam no mundo.",
+      "imgAlt": "Marketplaces da Amazon"
+    },
+    "s6": {
+      "h": "Exporte os resultados das suas buscas",
+      "p1": "Não perca mais insights valiosos. Com nossa funcionalidade de exportação integrada, salve suas palavras-chave para futuras sessões estratégicas ou conecte seu fluxo de trabalho exportando os resultados para outras ferramentas.",
+      "p2": "Seja uma seleção específica ou todas as palavras-chave pesquisadas, você tem duas opções: marque as preferidas para um export personalizado, ou baixe a lista completa em um único clique.",
+      "imgAlt": "Exportação dos resultados de palavras-chave"
+    },
+    "s7": {
+      "h": "Otimize títulos, descrições e bullet points dos seus listings",
+      "p1": "Você não usa nossa ferramenta apenas para encontrar palavras-chave. Seja um novo título de produto, uma descrição ou bullet points para seu listing, você pode usar nosso gerador de listings para criar todos eles.",
+      "p2": "Basta selecionar algumas palavras-chave para as quais quer otimizar seu conteúdo e inserir algumas informações sobre o produto. Deixe a ferramenta fazer o trabalho e receba um título, descrição ou bullet points totalmente otimizados.",
+      "imgAlt": "Gerador de listings"
+    }
+  },
+  "footer": {
+    "tagline": "Guias de negócios online de alto nível e análises de software.",
+    "company": "Empresa",
+    "blog": "Blog",
+    "about": "Sobre",
+    "contact": "Contato",
+    "legal": "Legal",
+    "terms": "Termos de serviço",
+    "privacy": "Política de privacidade",
+    "affiliate": "Aviso de afiliados",
+    "connect": "Conectar",
+    "language": "Idioma",
+    "copyright": "Copyright 2026 · SMARTMINDED"
+  },
+  "navbar": {
+    "freeTools": "Ferramentas Gratuitas",
+    "guides": "Guias",
+    "reviews": "Avaliações",
+    "coupons": "Cupons",
+    "blog": "Blog",
+    "amazonSellerTools": "FERRAMENTAS PARA VENDEDORES",
+    "nameGenerators": "GERADORES DE NOME",
+    "keywordTool": "Ferramenta de Palavras-Chave Amazon",
+    "keywordToolDesc": "Encontre as melhores palavras-chave para seus produtos.",
+    "salesEstimator": "Estimador de Vendas Amazon",
+    "salesEstimatorDesc": "Estime vendas a partir de dados BSR.",
+    "trendingProducts": "Produtos em Tendência Amazon",
+    "trendingProductsDesc": "Descubra produtos bestseller.",
+    "searchFunnelAnalyzer": "Amazon PPC Auditor",
+    "searchFunnelAnalyzerDesc": "Analise suas campanhas PPC.",
+    "randomProductFinder": "Random Product Generator",
+    "randomProductFinderDesc": "Descubra ideias de produtos aleatórias.",
+    "productDescriptionEditor": "Product Description Generator",
+    "productDescriptionEditorDesc": "Crie descrições de produtos em HTML.",
+    "instagramNameGenerator": "Gerador de Nome do Instagram",
+    "businessNameGenerator": "Gerador de Nome de Negócio",
+    "amazonNameGenerator": "Gerador de Nome da Amazon",
+    "productNameGenerator": "Gerador de Nome de Produto",
+    "etsyNameGenerator": "Gerador de Nome de Loja Etsy",
+    "shopifyNameGenerator": "Gerador de Nome da Shopify",
+    "domainNameGenerator": "Gerador de Nome de Domínio",
+    "youtubeNameGenerator": "Gerador de Nome do YouTube",
+    "amazonFbaExplanation": "Explicação do Amazon FBA",
+    "becomeAmazonSeller": "Tornar-se Vendedor da Amazon",
+    "whatToSell": "O que Vender na Amazon",
+    "allArticles": "Todos os Artigos →",
+    "bestAmazonTools": "Melhores Ferramentas Vendedor Amazon",
+    "jungleScoutReview": "Avaliação do Jungle Scout",
+    "helium10Review": "Avaliação do Helium 10",
+    "jungleScoutCoupons": "Cupons do Jungle Scout",
+    "helium10Coupons": "Cupons do Helium 10"
+  }
+}
