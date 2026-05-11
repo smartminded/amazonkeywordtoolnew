@@ -220,6 +220,23 @@ class AmazonKeywordTool {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-VG7P0DDS0J');
+                gtag('config', 'AW-16806730151');
+            </script>
+
+            <!-- Google Ads conversion: Amazon Keyword Tool Sign Up -->
+            <script>
+                function gtag_report_conversion(url) {
+                    var callback = function () {
+                        if (typeof(url) != 'undefined') {
+                            window.location = url;
+                        }
+                    };
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-16806730151/SXkwCMrUrfIZEKezic4-',
+                        'event_callback': callback
+                    });
+                    return false;
+                }
             </script>
             <?php endif; ?>
         </head>

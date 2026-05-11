@@ -36,6 +36,11 @@ export default function UsageLockModal({ lockedUntil, onSubmitEmail, onClose }) 
     setSubmitting(true);
     try {
       await onSubmitEmail(email);
+      // Google Ads conversion — defined by the PHP plugin shell on the
+      // English locale only, so this is a no-op on other languages.
+      if (typeof window.gtag_report_conversion === 'function') {
+        try { window.gtag_report_conversion(); } catch { /* ignore */ }
+      }
       onClose();
     } catch {
       setError('generic');
