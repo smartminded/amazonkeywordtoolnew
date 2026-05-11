@@ -211,6 +211,17 @@ class AmazonKeywordTool {
                 }
             </style>
             <script src="https://analytics.ahrefs.com/analytics.js" data-key="kWBXdCw/ORWPgdPZFXCULg" async></script>
+
+            <?php if ($lang === 'en') : ?>
+            <!-- Google tag (gtag.js) — English version only -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-VG7P0DDS0J"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-VG7P0DDS0J');
+            </script>
+            <?php endif; ?>
         </head>
         <body class="amazon-keyword-tool">
             <div id="akt-root"></div>
