@@ -1,0 +1,240 @@
+{
+  "links": {
+    "home": "https://www.smart-minded.com/en/",
+    "blog": "https://www.smart-minded.com/en/business/",
+    "about": "https://www.smart-minded.com/en/about/",
+    "contact": "https://www.smart-minded.com/en/contact/",
+    "terms": "https://www.smart-minded.com/en/terms-of-service/",
+    "privacy": "https://www.smart-minded.com/en/privacy-policy/",
+    "affiliate": "https://www.smart-minded.com/en/affiliate-disclaimer/",
+    "keywordTool": "#",
+    "salesEstimator": "https://www.smart-minded.com/en/amazon-sales-estimator/",
+    "trendingProducts": "https://www.smart-minded.com/en/amazon-trending-products/",
+    "searchFunnelAnalyzer": "https://www.smart-minded.com/en/amazon-ppc-audit-tool/",
+    "randomProductFinder": "https://www.smart-minded.com/en/random-amazon-product-generator/",
+    "productDescriptionEditor": "https://www.smart-minded.com/en/amazon-product-description-editor/",
+    "instagramNameGenerator": "https://www.smart-minded.com/en/instagram-name-generator/",
+    "businessNameGenerator": "https://www.smart-minded.com/en/business-name-generator/",
+    "amazonNameGenerator": "https://www.smart-minded.com/en/amazon-store-name-generator/",
+    "productNameGenerator": "https://www.smart-minded.com/en/product-name-generator/",
+    "etsyNameGenerator": "https://www.smart-minded.com/en/etsy-shop-name-generator/",
+    "shopifyNameGenerator": "https://www.smart-minded.com/en/shopify-name-generator/",
+    "domainNameGenerator": "https://www.smart-minded.com/en/domain-name-generator/",
+    "youtubeNameGenerator": "https://www.smart-minded.com/en/youtube-name-generator/",
+    "amazonFbaExplanation": "https://www.smart-minded.com/en/business/what-is-amazon-fba/",
+    "becomeAmazonSeller": "https://www.smart-minded.com/en/business/how-to-become-an-amazon-seller/",
+    "whatToSell": "https://www.smart-minded.com/en/business/what-to-sell-on-amazon/",
+    "allGuides": "https://www.smart-minded.com/en/amazon-seller-guides/",
+    "bestAmazonTools": "https://www.smart-minded.com/en/business/amazon-fba-tools/",
+    "jungleScoutReview": "https://www.smart-minded.com/en/business/jungle-scout-review/",
+    "helium10Review": "https://www.smart-minded.com/en/business/helium-10-review/",
+    "allReviews": "https://www.smart-minded.com/en/amazon-tools-reviews/",
+    "jungleScoutDiscount": "https://www.smart-minded.com/en/business/jungle-scout-discount/",
+    "helium10Coupon": "https://www.smart-minded.com/en/business/helium-10-coupon/",
+    "business": "https://www.smart-minded.com/en/business/"
+  },
+  "hero": {
+    "eyebrow": "Free · No Sign-up",
+    "title": "Find The Best Amazon Keywords"
+  },
+  "tabs": {
+    "ideas": "Get Keyword Ideas",
+    "product": "Get Product Keywords"
+  },
+  "tool": {
+    "marketplace": "Marketplace",
+    "search": "Search",
+    "loading": "This can take a while because we are fetching the most accurate live data...",
+    "seed": {
+      "label": "Seed keyword",
+      "placeholder": "e.g. wireless earbuds"
+    },
+    "asin": {
+      "label": "Amazon ASIN",
+      "placeholder": "B0XXXXXXXX",
+      "invalid": "ASIN must be 10 alphanumeric characters."
+    },
+    "competition": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "marketSize": {
+      "huge": "Huge",
+      "large": "Large",
+      "medium": "Medium",
+      "small": "Small"
+    },
+    "filters": {
+      "competition": "Competition",
+      "searchVolume": "Search volume",
+      "marketSize": "Market size",
+      "min": "Min",
+      "max": "Max",
+      "all": "All"
+    },
+    "table": {
+      "keyword": "Keyword",
+      "searchVolume": "Search volume",
+      "competition": "Competition",
+      "trend": "Trend",
+      "cpc": "CPC",
+      "marketSize": "Market size",
+      "selectAll": "Select all",
+      "fromAutosuggest": "Autosuggest",
+      "summary": "Showing {{count}} of {{total}} keywords · {{selected}} selected",
+      "exportAll": "Export CSV",
+      "exportSelected": "Export {{count}} selected",
+      "noMatches": "No keywords match the current filters.",
+      "pageRange": "Showing {{from}}–{{to}} of {{total}}",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "empty": {
+      "title": "No keywords found",
+      "body": "We couldn't find any keywords for that input on this marketplace. Try a broader seed term or a different marketplace.",
+      "retry": "Try again"
+    },
+    "error": {
+      "generic": {
+        "title": "Something went wrong",
+        "body": "We couldn't fetch keyword data. Your inputs are still here — please try again."
+      },
+      "rate_limit": {
+        "title": "Rate limit reached",
+        "body": "Our keyword data providers have temporarily rate-limited the request. Please wait a moment and try again."
+      },
+      "credentials": {
+        "title": "API credentials missing",
+        "body": "The tool needs DataForSEO and Rainforest API credentials to be configured before it can fetch live data."
+      }
+    },
+    "warning": {
+      "title": "Partial results",
+      "AUTOCOMPLETE_FAILED": "We loaded the base keyword set but Amazon's live autosuggest expansion didn't return — results below are from DataForSEO only.",
+      "RATE_LIMITED": "Amazon's live autosuggest hit a rate limit before all keywords were expanded. Showing the partial set we already have.",
+      "METRICS_PARTIAL": "Some autosuggest keywords are missing metrics — they were merged in but enrichment didn't complete."
+    }
+  },
+  "partner": {
+    "eyebrow": "Partner",
+    "copy": "Try the best Amazon Keyword Tools from our Partner Helium 10.",
+    "cta": "Try For Free"
+  },
+  "gate": {
+    "title": "Unlock unlimited searches",
+    "body": "You've used your 5 free searches. Sign up with your email to keep searching, or come back next week.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "unlockCta": "Unlock unlimited searches",
+    "submitting": "Unlocking…",
+    "waitNote": "Free access resumes on {{date}}.",
+    "close": "Close",
+    "error": {
+      "invalid": "Please enter a valid email address.",
+      "generic": "Something went wrong — please try again."
+    }
+  },
+  "cta": {
+    "title": "Learn More About Amazon Selling",
+    "subtitle": "Discover expert strategies, in-depth guides, and proven tactics to grow your Amazon business. Read our latest articles and stay ahead of the competition.",
+    "button": "Read Our Blog"
+  },
+  "content": {
+    "s1": {
+      "h": "Find the best keywords for your Amazon products",
+      "p1": "Not sure what people are typing into the Amazon search bar to find the products you sell on Amazon? No problem with our free Amazon keyword tool.",
+      "p2": "You can use the feature <b>Get Keyword Ideas</b> of our Amazon keyword tool and type in a seed keyword to get hundreds of keyword ideas... or you can search for the keywords other Amazon products are ranking for. For the latter one, type in the ASIN of any Amazon product and see all the keywords this product is ranking for on Amazon.",
+      "p3": "Along with each keyword, you will get detailed search volume, competition levels, trend data and CPC values. No matter if you want to plan your future keyword strategy or optimize your running PPC campaign, our Amazon keyword tool is by far the most comprehensive <b>free</b> keyword tool for Amazon sellers.",
+      "imgAlt": "Amazon Keyword Tool search results"
+    },
+    "s2": {
+      "h": "Get accurate metrics to find high potential keywords",
+      "p1": "If you want to succeed on Amazon, you need to find keywords with low competition and high conversion rate. Imagine you are selling a blue drinking bottle. People who are searching for a blue drinking bottle will probably be more likely to buy your product than people who are basically searching for a drinking bottle.",
+      "p2": "Use our tool wisely and try to find as specific Amazon keywords as possible, because those will be the keywords that actually bring your business customers.",
+      "p3": "On top of that, use our metrics to find keywords with low competition. For example, you should check out the competition levels of keywords using our competition indicator. This indicator will show you whether a keyword has \"Low\", \"Medium\" or \"High\" competition. A good starting point for your Amazon keyword research.",
+      "imgAlt": "Amazon Keyword Tool filters"
+    },
+    "s3": {
+      "h": "Get accurate data for keyword search volume",
+      "p1": "If you are looking for Amazon keywords, you obviously want to know how often these keywords are being searched every month. A keyword that is only searched 10 times per month might mean less to your business than a keyword that is being search 100 or 1000 times per month.",
+      "p2": "And not only the search volume needs to be important for you as an Amazon seller. Also the market size is important for your business. If a keyword does not generate any sales, it does not matter for your business. You need to make sure that the keywords you are using have a decent market size and generate sales. You can therefore take a look at our market size indicator.",
+      "imgAlt": "Amazon Keyword Tool metrics"
+    },
+    "s4": {
+      "h": "Find the keywords your competitors are ranking for",
+      "p1": "With our <b>Amazon keyword tool</b>, you can not only find keywords based on one seed keyword. You can also find the keywords that your competitors are ranking for on Amazon. All you need is to type in the ASIN of an Amazon product and the tool will give you all the keywords this product is ranking for on Amazon.",
+      "imgAlt": "Optimized Amazon product listing"
+    },
+    "s5": {
+      "h": "Do Amazon keyword research for nearly every marketplace",
+      "p1": "Your business does not need to be limited by borders. Whether you are scaling your Amazon business in established markets like the US, or breaking into emerging markets, our Amazon keyword tool provides the data you need.",
+      "p2": "With support for <b>22 Amazon marketplaces</b>, our tool empowers you to gain a competitive edge by finding what customers are searching for on Amazon, no matter where they are located in the world.",
+      "imgAlt": "Amazon marketplaces"
+    },
+    "s6": {
+      "h": "Export the keyword results for your searches",
+      "p1": "Never lose valuable insights again. With our integrated export feature, you can save your keywords for future strategy sessions or seamlessly bridge your workflow by exporting results to other third-party tools.",
+      "p2": "Whether you need a specific selection or all your researched keywords, you have two options: simply tick your preferred keywords for a custom export or download the full list in one single click.",
+      "imgAlt": "Export keyword results"
+    },
+    "s7": {
+      "h": "Optimize your listing titles, description and bullet points",
+      "p1": "You cannot only find keywords with our Amazon keyword tool. No matter if you need a new product title, a product description or bullet points for your listing, you can use our listing generator to generate all of these.",
+      "p2": "All you need to do is to select a few keywords you want your content to be optimized for and type in some other information about your product. Then, let the tool do your work and get a fully optimized title, description or bullet points.",
+      "imgAlt": "Listing generator"
+    }
+  },
+  "footer": {
+    "tagline": "Next-Level Online Business Guides and Software Reviews.",
+    "company": "Company",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "affiliate": "Affiliate Disclaimer",
+    "connect": "Connect",
+    "language": "Language",
+    "copyright": "Copyright 2026 · SMARTMINDED"
+  },
+  "navbar": {
+    "freeTools": "Free Tools",
+    "guides": "Guides",
+    "reviews": "Reviews",
+    "coupons": "Coupons",
+    "blog": "Blog",
+    "amazonSellerTools": "AMAZON SELLER TOOLS",
+    "nameGenerators": "NAME GENERATORS",
+    "keywordTool": "Amazon Keyword Tool",
+    "keywordToolDesc": "Find the best keywords for your products.",
+    "salesEstimator": "Amazon Sales Estimator",
+    "salesEstimatorDesc": "Estimate sales from BSR data.",
+    "trendingProducts": "Amazon Trending Products",
+    "trendingProductsDesc": "Discover bestselling products.",
+    "searchFunnelAnalyzer": "Amazon PPC Auditor",
+    "searchFunnelAnalyzerDesc": "Analyze your PPC campaigns.",
+    "randomProductFinder": "Random Product Generator",
+    "randomProductFinderDesc": "Discover random product ideas.",
+    "productDescriptionEditor": "Product Description Generator",
+    "productDescriptionEditorDesc": "Create product descriptions in HTML.",
+    "instagramNameGenerator": "Instagram Name Generator",
+    "businessNameGenerator": "Business Name Generator",
+    "amazonNameGenerator": "Amazon Name Generator",
+    "productNameGenerator": "Product Name Generator",
+    "etsyNameGenerator": "Etsy Shop Name Generator",
+    "shopifyNameGenerator": "Shopify Name Generator",
+    "domainNameGenerator": "Domain Name Generator",
+    "youtubeNameGenerator": "YouTube Name Generator",
+    "amazonFbaExplanation": "Amazon FBA Explanation",
+    "becomeAmazonSeller": "Become an Amazon Seller",
+    "whatToSell": "What to Sell on Amazon",
+    "allArticles": "All Articles →",
+    "bestAmazonTools": "Best Amazon Seller Tools",
+    "jungleScoutReview": "Jungle Scout Review",
+    "helium10Review": "Helium 10 Review",
+    "jungleScoutCoupons": "Jungle Scout Coupons",
+    "helium10Coupons": "Helium 10 Coupons"
+  }
+}

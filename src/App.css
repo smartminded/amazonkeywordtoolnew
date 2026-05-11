@@ -1,0 +1,16 @@
+/* Amazon Trending Products - Custom Styles */
+
+/* This file is intentionally minimal since we're using Tailwind utility classes directly in JSX */
+
+/* Global Font Styles */
+h1, h2 {
+  font-weight: 900 !important;
+  letter-spacing: -0.025em !important;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Add any custom CSS here if needed */
