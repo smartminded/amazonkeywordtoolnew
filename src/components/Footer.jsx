@@ -2,8 +2,12 @@ import { useTranslation } from 'react-i18next';
 import logo from '@/assets/smartminded_black_logo_no_background-768x173.webp';
 
 const languageLinks = [
-  { label: 'English', href: 'https://www.smart-minded.com/en/amazon-keyword-tool/' },
-  { label: 'German', href: 'https://www.smart-minded.com/amazon-keyword-tool/' },
+  { label: 'English',    href: 'https://www.smart-minded.com/en/amazon-keyword-tool/' },
+  { label: 'German',     href: 'https://www.smart-minded.com/amazon-keyword-tool/' },
+  { label: 'French',     href: 'https://www.smart-minded.com/fr/amazon-keyword-tool/' },
+  { label: 'Italian',    href: 'https://www.smart-minded.com/it/amazon-keyword-tool/' },
+  { label: 'Spanish',    href: 'https://www.smart-minded.com/es/amazon-keyword-tool/' },
+  { label: 'Portuguese', href: 'https://www.smart-minded.com/pt/amazon-keyword-tool/' },
 ];
 
 export default function Footer() {
