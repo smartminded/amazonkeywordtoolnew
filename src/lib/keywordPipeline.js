@@ -11,7 +11,11 @@ import { fetchKeywordsForSeed, fetchSearchVolume } from './dataforseo';
 import { fetchAutocomplete } from './rainforest';
 
 const STAGE2_CONCURRENCY = 4;
-const STAGE2_MAX_SEEDS = 20; // cap on how many Stage-1 keywords we expand
+// Tuned for cost / rate-limit budget: each Stage-2 seed costs one Rainforest
+// autocomplete call, and the WP proxy rate-limits at ~300/5min per IP. 10 keeps
+// each user search at ~12 upstream calls total (1 Stage 1 + 10 Stage 2 + 1
+// enrichment) so an IP gets ~25 searches per window before the limit kicks in.
+const STAGE2_MAX_SEEDS = 10;
 const STAGE1_LIMIT = 100;
 
 export async function runKeywordIdeasPipeline({ seed, marketplace, signal }) {

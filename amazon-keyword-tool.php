@@ -366,7 +366,13 @@ function akt_proxy_permission_check(WP_REST_Request $request) {
     }
 
     // Per-IP rate limit using transients.
-    $max    = defined('AKT_RATE_LIMIT_MAX')    ? (int) AKT_RATE_LIMIT_MAX    : 60;
+    // The default cap accommodates Tab 1's natural fan-out: one "Get Keyword
+    // Ideas" search makes ~22 upstream calls (Stage 1 + Stage 2 autocomplete +
+    // enrichment). Cap = 300 lets a single IP do ~13 searches per 5 minutes,
+    // which is far above any realistic user load. The localStorage gate (5
+    // searches/week per browser) is the primary throttle; this server-side
+    // limit only exists for abuse protection.
+    $max    = defined('AKT_RATE_LIMIT_MAX')    ? (int) AKT_RATE_LIMIT_MAX    : 300;
     $window = defined('AKT_RATE_LIMIT_WINDOW') ? (int) AKT_RATE_LIMIT_WINDOW : 5;
     $ip     = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 'unknown';
     $key    = 'akt_rl_' . md5($ip);
