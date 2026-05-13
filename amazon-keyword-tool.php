@@ -300,6 +300,24 @@ register_deactivation_hook(__FILE__, function() {
  *   define('AKT_RATE_LIMIT_WINDOW', 5);  // window in minutes
  * ------------------------------------------------------------------------- */
 
+/**
+ * The site has a global filter that blocks REST API requests from logged-out
+ * visitors (e.g. Wordfence / "Disable REST API"). That filter returns its 401
+ * before our per-route permission_callback can run, so anonymous visitors can
+ * never reach our proxy. Opt our namespace out of the lockdown — our routes
+ * still have their own same-origin + nonce + rate-limit checks downstream.
+ */
+add_filter('rest_authentication_errors', function ($errors) {
+    if (empty($_SERVER['REQUEST_URI'])) {
+        return $errors;
+    }
+    $uri = $_SERVER['REQUEST_URI'];
+    if (strpos($uri, '/wp-json/akt/v1/') !== false || strpos($uri, 'rest_route=/akt/v1/') !== false) {
+        return null; // allow our routes through; their own checks run next
+    }
+    return $errors;
+}, PHP_INT_MAX);
+
 add_action('rest_api_init', function () {
     register_rest_route('akt/v1', '/dataforseo', array(
         'methods'             => 'POST',
