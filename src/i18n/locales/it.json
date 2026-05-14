@@ -35,8 +35,7 @@
   },
   "hero": {
     "eyebrow": "Gratis · Senza registrazione",
-    "title": "Amazon Keyword Tool",
-    "subtitle": "Trova le migliori parole chiave Amazon con volume di ricerca, concorrenza, CPC e dati di trend per 22 marketplace."
+    "title": "Trova le migliori parole chiave Amazon"
   },
   "tabs": {
     "ideas": "Trova idee di parole chiave",
@@ -140,33 +139,6 @@
     "title": "Scopri di più sulla vendita su Amazon",
     "subtitle": "Scopri strategie da esperti, guide approfondite e tattiche collaudate per far crescere il tuo business Amazon. Leggi i nostri ultimi articoli e resta un passo avanti alla concorrenza.",
     "button": "Leggi il nostro blog"
-  },
-  "faq": {
-    "heading": "Domande frequenti sull'Amazon Keyword Tool",
-    "q1": {
-      "q": "Cos'è l'Amazon Keyword Tool?",
-      "a": "Il nostro Amazon Keyword Tool è uno strumento gratuito di ricerca di parole chiave per venditori Amazon. Inserisci una parola chiave iniziale e ottieni centinaia di idee, oppure inserisci un ASIN Amazon per vedere tutte le parole chiave per cui si posiziona un prodotto concorrente. Ogni parola chiave include volume di ricerca, concorrenza, dati di trend e CPC."
-    },
-    "q2": {
-      "q": "L'Amazon Keyword Tool è gratuito?",
-      "a": "Sì — l'Amazon Keyword Tool è 100% gratuito. Hai due ricerche gratuite senza registrazione; poi puoi sbloccare ricerche illimitate inserendo la tua email."
-    },
-    "q3": {
-      "q": "Come funziona l'Amazon Keyword Tool?",
-      "a": "Combiniamo due fonti di dati live. Prima recuperiamo un set base di parole chiave correlate con volume e CPC. Poi espandiamo questo set con l'autosuggest live di Amazon, così ottieni anche le parole chiave long-tail che i veri acquirenti digitano nella barra di ricerca."
-    },
-    "q4": {
-      "q": "Quali marketplace Amazon sono supportati?",
-      "a": "L'Amazon Keyword Tool supporta <b>22 marketplace Amazon</b> tra cui USA, UK, Germania, Francia, Italia, Spagna, Canada, Messico, Brasile, Giappone, India, Australia, Singapore, Arabia Saudita, EAU e altri. La ricerca reverse-ASIN è disponibile per USA, EAU, Egitto e Arabia Saudita."
-    },
-    "q5": {
-      "q": "Posso esportare i risultati delle parole chiave?",
-      "a": "Sì. Seleziona le parole chiave che vuoi ed esportale in CSV con un click, oppure esporta l'intero set senza selezionare nulla. Perfetto per alimentare le tue campagne PPC o il tuo ottimizzatore di listing."
-    },
-    "q6": {
-      "q": "Quanto sono accurati i dati di volume e CPC?",
-      "a": "I dati provengono direttamente da fornitori professionali di dati SEO e Amazon. Volume di ricerca, concorrenza e CPC sono gli stessi numeri usati da strumenti a pagamento come Helium 10 e Jungle Scout — aggiornati di continuo e gratuiti qui."
-    }
   },
   "content": {
     "s1": {

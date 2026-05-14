@@ -35,8 +35,7 @@
   },
   "hero": {
     "eyebrow": "Kostenlos · Ohne Anmeldung",
-    "title": "Amazon Keyword Tool",
-    "subtitle": "Finde die besten Amazon Keywords mit kostenlosen Daten zu Suchvolumen, Wettbewerb, CPC und Trends für 22 Marktplätze."
+    "title": "Finde die besten Amazon Keywords"
   },
   "tabs": {
     "ideas": "Keyword-Ideen finden",
@@ -140,33 +139,6 @@
     "title": "Mehr über den Handel auf Amazon erfahren",
     "subtitle": "Entdecke Expertenstrategien, ausführliche Anleitungen und bewährte Taktiken, um dein Amazon Business aufzubauen. Lies unsere neuesten Artikel und bleib der Konkurrenz einen Schritt voraus.",
     "button": "Unseren Blog lesen"
-  },
-  "faq": {
-    "heading": "Häufige Fragen zum Amazon Keyword Tool",
-    "q1": {
-      "q": "Was ist das Amazon Keyword Tool?",
-      "a": "Unser Amazon Keyword Tool ist ein kostenloses Keyword-Recherche-Tool für Amazon-Verkäufer. Gib ein Seed-Keyword ein und erhalte hunderte Keyword-Ideen oder gib eine Amazon-ASIN ein und sieh alle Keywords, für die ein Konkurrenzprodukt rankt. Zu jedem Keyword bekommst du Suchvolumen, Wettbewerb, Trenddaten und CPC."
-    },
-    "q2": {
-      "q": "Ist das Amazon Keyword Tool kostenlos?",
-      "a": "Ja — das Amazon Keyword Tool ist zu 100% kostenlos. Du hast zwei kostenlose Suchen ohne Anmeldung; danach kannst du mit deiner E-Mail unbegrenzte Suchen freischalten."
-    },
-    "q3": {
-      "q": "Wie funktioniert das Amazon Keyword Tool?",
-      "a": "Wir kombinieren zwei Live-Datenquellen. Zuerst holen wir eine Basis verwandter Keywords mit Suchvolumen und CPC. Dann erweitern wir diese Liste mit Amazons eigener Live-Autosuggest, damit du auch die Long-Tail-Keywords bekommst, die echte Käufer in die Amazon-Suchleiste tippen."
-    },
-    "q4": {
-      "q": "Welche Amazon-Marktplätze werden unterstützt?",
-      "a": "Das Amazon Keyword Tool unterstützt <b>22 Amazon-Marktplätze</b> — darunter USA, UK, Deutschland, Frankreich, Italien, Spanien, Kanada, Mexiko, Brasilien, Japan, Indien, Australien, Singapur, Saudi-Arabien, VAE und mehr. Reverse-ASIN-Suchen sind für USA, VAE, Ägypten und Saudi-Arabien verfügbar."
-    },
-    "q5": {
-      "q": "Kann ich die Keyword-Ergebnisse exportieren?",
-      "a": "Ja. Wähle die gewünschten Keywords aus und exportiere sie mit einem Klick als CSV, oder exportiere das komplette Ergebnis ohne Auswahl. Perfekt für deine PPC-Kampagnen oder dein Listing-Tool."
-    },
-    "q6": {
-      "q": "Wie genau sind die Daten zu Suchvolumen und CPC?",
-      "a": "Die Daten kommen direkt von professionellen SEO- und Amazon-Datenanbietern. Suchvolumen, Wettbewerb und CPC sind dieselben Zahlen, die kostenpflichtige Tools wie Helium 10 oder Jungle Scout verwenden — laufend aktualisiert und für dich hier gratis."
-    }
   },
   "content": {
     "s1": {

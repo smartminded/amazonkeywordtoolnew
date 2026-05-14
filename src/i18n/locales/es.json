@@ -35,8 +35,7 @@
   },
   "hero": {
     "eyebrow": "Gratis · Sin registro",
-    "title": "Amazon Keyword Tool",
-    "subtitle": "Encuentra las mejores palabras clave de Amazon con volumen, competencia, CPC y datos de tendencia para 22 marketplaces."
+    "title": "Encuentra las mejores palabras clave de Amazon"
   },
   "tabs": {
     "ideas": "Buscar ideas de palabras clave",
@@ -140,33 +139,6 @@
     "title": "Aprende más sobre vender en Amazon",
     "subtitle": "Descubre estrategias de expertos, guías detalladas y tácticas probadas para hacer crecer tu negocio en Amazon. Lee nuestros artículos más recientes y mantente por delante de la competencia.",
     "button": "Leer nuestro blog"
-  },
-  "faq": {
-    "heading": "Preguntas frecuentes sobre el Amazon Keyword Tool",
-    "q1": {
-      "q": "¿Qué es el Amazon Keyword Tool?",
-      "a": "Nuestro Amazon Keyword Tool es una herramienta gratuita de investigación de palabras clave para vendedores de Amazon. Escribe una palabra clave inicial y obtén cientos de ideas, o escribe un ASIN de Amazon y verás todas las palabras clave por las que se posiciona un producto competidor. Cada palabra clave incluye volumen de búsqueda, nivel de competencia, datos de tendencia y CPC."
-    },
-    "q2": {
-      "q": "¿Es gratuito el Amazon Keyword Tool?",
-      "a": "Sí — el Amazon Keyword Tool es 100% gratis. Tienes dos búsquedas gratuitas sin registro; después puedes desbloquear búsquedas ilimitadas introduciendo tu email."
-    },
-    "q3": {
-      "q": "¿Cómo funciona el Amazon Keyword Tool?",
-      "a": "Combinamos dos fuentes de datos en vivo. Primero obtenemos un conjunto base de palabras clave relacionadas con volumen y CPC. Luego ampliamos ese conjunto con el autosuggest en vivo de Amazon para que también obtengas las palabras clave long-tail que los compradores reales escriben en la barra de búsqueda."
-    },
-    "q4": {
-      "q": "¿Qué marketplaces de Amazon admite la herramienta?",
-      "a": "El Amazon Keyword Tool admite <b>22 marketplaces de Amazon</b> incluyendo EE. UU., Reino Unido, Alemania, Francia, Italia, España, Canadá, México, Brasil, Japón, India, Australia, Singapur, Arabia Saudita, EAU y más. La búsqueda reverse-ASIN está disponible para EE. UU., EAU, Egipto y Arabia Saudita."
-    },
-    "q5": {
-      "q": "¿Puedo exportar los resultados?",
-      "a": "Sí. Marca las palabras clave que quieras y expórtalas en CSV con un click, o exporta todo el conjunto sin seleccionar nada. Perfecto para alimentar tus campañas PPC o tu optimizador de listings."
-    },
-    "q6": {
-      "q": "¿Qué tan precisos son los datos de volumen y CPC?",
-      "a": "Los datos provienen directamente de proveedores profesionales de datos SEO y Amazon. Volumen de búsqueda, competencia y CPC son los mismos números que usan herramientas de pago como Helium 10 y Jungle Scout — actualizados continuamente y aquí, gratis."
-    }
   },
   "content": {
     "s1": {
