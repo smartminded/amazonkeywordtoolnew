@@ -2,7 +2,6 @@
 export default {
   content: [
     "./index.html",
-    "./amazon-keyword-tool.php",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {

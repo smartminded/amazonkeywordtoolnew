@@ -123,7 +123,7 @@
   },
   "gate": {
     "title": "Unlock unlimited searches",
-    "body": "You've used your two free searches. Sign up with your email to keep searching, or come back next week.",
+    "body": "You've used your 5 free searches. Sign up with your email to keep searching, or come back next week.",
     "emailLabel": "Email address",
     "emailPlaceholder": "you@example.com",
     "unlockCta": "Unlock unlimited searches",

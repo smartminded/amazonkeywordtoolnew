@@ -31,7 +31,7 @@ echo ""
 
 # Ensure remote directories exist
 echo "📁 Ensuring remote directories exist..."
-ssh $SSH_USER@$SSH_HOST "mkdir -p $REMOTE_PLUGIN_PATH/assets/css $REMOTE_PLUGIN_PATH/assets/js $REMOTE_PLUGIN_PATH/assets/locales"
+ssh $SSH_USER@$SSH_HOST "mkdir -p $REMOTE_PLUGIN_PATH/assets/css $REMOTE_PLUGIN_PATH/assets/js"
 
 if [ $? -ne 0 ]; then
     echo "❌ Failed to create remote directories!"
@@ -70,15 +70,6 @@ if [ -n "$ASSET_FILES" ]; then
     fi
 else
     echo "  (no bundled assets to upload)"
-fi
-
-# Deploy locale JSONs so PHP can server-render hero + content sections.
-echo "🌐 Uploading locale JSONs..."
-scp src/i18n/locales/*.json $SSH_USER@$SSH_HOST:$REMOTE_PLUGIN_PATH/assets/locales/
-
-if [ $? -ne 0 ]; then
-    echo "❌ Locale upload failed!"
-    exit 1
 fi
 
 # Deploy PHP plugin file

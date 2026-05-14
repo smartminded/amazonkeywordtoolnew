@@ -123,7 +123,7 @@
   },
   "gate": {
     "title": "Unbegrenzte Suchen freischalten",
-    "body": "Du hast deine zwei kostenlosen Suchen aufgebraucht. Melde dich mit deiner E-Mail-Adresse an, um weiterzusuchen – oder komm in einer Woche wieder.",
+    "body": "Du hast deine 5 kostenlosen Suchen aufgebraucht. Melde dich mit deiner E-Mail-Adresse an, um weiterzusuchen – oder komm in einer Woche wieder.",
     "emailLabel": "E-Mail-Adresse",
     "emailPlaceholder": "du@beispiel.de",
     "unlockCta": "Unbegrenzte Suchen freischalten",

@@ -165,13 +165,7 @@ class AmazonKeywordTool {
 
             <script type="application/ld+json">
             <?php
-                $publisher = array(
-                    '@type' => 'Organization',
-                    'name' => 'SMARTMINDED',
-                    'url' => home_url('/')
-                );
-
-                $web_app = array(
+                $schema = array(
                     '@context' => 'https://schema.org',
                     '@type' => 'WebApplication',
                     'name' => 'Amazon Keyword Tool',
@@ -180,41 +174,20 @@ class AmazonKeywordTool {
                     'operatingSystem' => 'All',
                     'description' => $page_description,
                     'datePublished' => '2026-05-04',
-                    'dateModified' => '2026-05-14',
+                    'dateModified' => '2026-05-11',
                     'inLanguage' => $lang,
                     'offers' => array(
                         '@type' => 'Offer',
                         'price' => '0',
                         'priceCurrency' => 'USD'
                     ),
-                    'publisher' => $publisher
-                );
-                echo wp_json_encode($web_app, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-            ?>
-            </script>
-
-            <!-- BreadcrumbList schema: helps SERP appearance with the home → tool breadcrumb trail. -->
-            <script type="application/ld+json">
-            <?php
-                $breadcrumb = array(
-                    '@context' => 'https://schema.org',
-                    '@type' => 'BreadcrumbList',
-                    'itemListElement' => array(
-                        array(
-                            '@type' => 'ListItem',
-                            'position' => 1,
-                            'name' => 'Home',
-                            'item' => home_url('/' . ($lang === 'de' ? '' : $lang . '/'))
-                        ),
-                        array(
-                            '@type' => 'ListItem',
-                            'position' => 2,
-                            'name' => 'Amazon Keyword Tool',
-                            'item' => $canonical
-                        )
+                    'publisher' => array(
+                        '@type' => 'Organization',
+                        'name' => 'SMARTMINDED',
+                        'url' => home_url('/')
                     )
                 );
-                echo wp_json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+                echo wp_json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
             ?>
             </script>
 
@@ -226,6 +199,15 @@ class AmazonKeywordTool {
                     padding: 0;
                     background: #ffffff;
                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                }
+                #akt-root:empty::before {
+                    content: 'Loading Amazon Keyword Tool...';
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    font-size: 24px;
+                    color: #666;
                 }
             </style>
             <script src="https://analytics.ahrefs.com/analytics.js" data-key="kWBXdCw/ORWPgdPZFXCULg" async></script>
@@ -259,104 +241,7 @@ class AmazonKeywordTool {
             <?php endif; ?>
         </head>
         <body class="amazon-keyword-tool">
-            <?php
-            /*
-             * Server-render the SEO-critical hero + marketing content. Read
-             * the locale JSON the React app uses so translations stay in sync.
-             * The page is split into three React mount points (navbar, tool,
-             * bottom) with the static blocks in between.
-             */
-            $locale_path = plugin_dir_path(__FILE__) . 'assets/locales/' . $lang . '.json';
-            if (!file_exists($locale_path)) {
-                $locale_path = plugin_dir_path(__FILE__) . 'assets/locales/en.json';
-            }
-            $t = json_decode(file_get_contents($locale_path), true);
-            $hero = isset($t['hero']) ? $t['hero'] : array();
-            $content = isset($t['content']) ? $t['content'] : array();
-
-            // Inline <b> tag rendering for paragraphs that contain bold spans
-            // in the JSON (matches the React Trans component's behaviour).
-            $render_p = function ($raw) {
-                // Allow only <b> tags; everything else is escaped.
-                $escaped = esc_html($raw);
-                return str_replace(array('&lt;b&gt;', '&lt;/b&gt;'), array('<b>', '</b>'), $escaped);
-            };
-
-            // Image manifest mirrors KeywordToolContent.jsx's SECTIONS.
-            $sections = array(
-                's1' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool-2.png',                              'pre' => array('p1','p2'), 'post' => array('p3')),
-                's2' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Competition_Levels-1.png',            'pre' => array('p1','p2','p3')),
-                's3' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_keyword_tools_search_volume_market_size-1.png',   'pre' => array('p1','p2')),
-                's4' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Get_Product_Keywords-1.png',          'pre' => array('p1')),
-                's5' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_marketplaces-1.png',                  'pre' => array('p1','p2')),
-                's6' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2026/01/Amazon_Keyword_Tool_Export_Results_max.png',                          'pre' => array('p1','p2')),
-                's7' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Create_a_Listing-2.png',              'pre' => array('p1'), 'post' => array('p2')),
-            );
-            ?>
-
-            <!-- Above-the-fold wrapper: navbar + (hero + tool centered as one block) fill 100vh. -->
-            <div class="flex min-h-screen flex-col">
-                <!-- Navbar mount (React) -->
-                <div id="akt-navbar"></div>
-
-                <!-- Above-the-fold block: hero + tool mount stacked with a fixed viewport-based top padding
-                     so the hero stays put when results load instead of re-centering and jumping. -->
-                <div class="flex-1 bg-gray-50 pt-[15vh] md:pt-[18vh]">
-                    <!-- Static hero (server-rendered for SEO; H1 + eyebrow). -->
-                    <header class="px-6 sm:px-10 md:px-12 lg:px-8">
-                        <div class="mx-auto max-w-7xl">
-                            <div class="mx-auto max-w-3xl text-center">
-                                <span class="mb-4 inline-flex items-center gap-1 rounded-full border border-primary-100 bg-primary-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.813 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.813a2 2 0 0 1 1.287-1.288L21 12l-5.813-1.9a2 2 0 0 1-1.288-1.287Z"/>
-                                        <path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>
-                                    </svg>
-                                    <?php echo esc_html(isset($hero['eyebrow']) ? $hero['eyebrow'] : ''); ?>
-                                </span>
-                                <h1 class="text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
-                                    <span class="bg-gradient-to-br from-gray-900 via-gray-900 to-primary-700 bg-clip-text text-transparent">
-                                        <?php echo esc_html(isset($hero['title']) ? $hero['title'] : ''); ?>
-                                    </span>
-                                </h1>
-                            </div>
-                        </div>
-                    </header>
-
-                    <!-- Tool mount (React with UsageGateProvider for the email gate modal). Natural height — parent centers it together with the hero. -->
-                    <div id="akt-tool"></div>
-                </div>
-            </div>
-
-            <!-- Static long-form content (server-rendered for SEO; H2s + paragraphs + images). -->
-            <section class="bg-white px-6 py-16 sm:px-10 md:px-12 md:py-24 lg:px-8">
-                <div class="mx-auto max-w-3xl space-y-20 md:space-y-28">
-                    <?php foreach ($sections as $sid => $sdef): if (!isset($content[$sid])) continue; ?>
-                    <article>
-                        <h2 class="mb-6 text-2xl tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
-                            <?php echo esc_html($content[$sid]['h']); ?>
-                        </h2>
-                        <div class="space-y-4 text-base leading-relaxed text-gray-700 sm:text-lg">
-                            <?php foreach ($sdef['pre'] as $pkey): ?>
-                                <p><?php echo $render_p($content[$sid][$pkey]); ?></p>
-                            <?php endforeach; ?>
-                        </div>
-                        <div class="my-10 overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 shadow-sm">
-                            <img src="<?php echo esc_url($sdef['img']); ?>" alt="<?php echo esc_attr($content[$sid]['imgAlt']); ?>" loading="lazy" class="block w-full">
-                        </div>
-                        <?php if (!empty($sdef['post'])): ?>
-                        <div class="space-y-4 text-base leading-relaxed text-gray-700 sm:text-lg">
-                            <?php foreach ($sdef['post'] as $pkey): ?>
-                                <p><?php echo $render_p($content[$sid][$pkey]); ?></p>
-                            <?php endforeach; ?>
-                        </div>
-                        <?php endif; ?>
-                    </article>
-                    <?php endforeach; ?>
-                </div>
-            </section>
-
-            <!-- Bottom mount (React: LearnMoreCta + Footer) -->
-            <div id="akt-bottom"></div>
+            <div id="akt-root"></div>
 
             <script>
                 window.AKT_LANG = '<?php echo esc_js($lang); ?>';
