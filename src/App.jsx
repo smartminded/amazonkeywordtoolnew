@@ -36,7 +36,7 @@ export function ToolApp() {
 
   return (
     <UsageGateProvider>
-      <section className="flex flex-1 items-start bg-gray-50 px-6 pt-6 pb-12 sm:px-10 md:px-12 md:pt-8 md:pb-16 lg:px-8">
+      <section className="bg-gray-50 px-6 pt-6 pb-0 sm:px-10 md:px-12 md:pt-8 lg:px-8">
         <div className="mx-auto w-full max-w-7xl">
           <div className="mx-auto max-w-5xl">
             <div className="mb-6 flex justify-center">
