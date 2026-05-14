@@ -1,46 +1,44 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Search, Package, Sparkles } from 'lucide-react';
+import { Search, Package } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import KeywordIdeasTab from '@/components/KeywordIdeasTab';
 import ProductKeywordsTab from '@/components/ProductKeywordsTab';
-import KeywordToolContent from '@/components/KeywordToolContent';
 import LearnMoreCta from '@/components/LearnMoreCta';
 import UsageGateProvider from '@/components/UsageGateProvider';
 import './App.css';
 
+// The page is split into three React mount points to allow PHP to server-
+// render the hero (H1) and the long-form marketing content between them:
+//
+//   #akt-navbar  → <NavbarApp />          (React)
+//   <header>      ← server-rendered hero  (PHP)
+//   #akt-tool    → <ToolApp />            (React, wrapped in UsageGateProvider)
+//   <section>     ← server-rendered content (PHP)
+//   #akt-bottom  → <BottomApp />          (React)
+//
+// SEO benefit: Googlebot's first-pass HTML now contains the H1 and all
+// seven content-section headings + paragraphs without needing JS execution.
+
 const TABS = [
-  { id: 'ideas',    icon: Search,  labelKey: 'tabs.ideas' },
-  { id: 'product',  icon: Package, labelKey: 'tabs.product' },
+  { id: 'ideas',   icon: Search,  labelKey: 'tabs.ideas' },
+  { id: 'product', icon: Package, labelKey: 'tabs.product' },
 ];
 
-function App() {
+export function NavbarApp() {
+  return <Navbar />;
+}
+
+export function ToolApp() {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState('ideas');
 
   return (
     <UsageGateProvider>
-    <div className="bg-gray-50">
-      <div className="flex min-h-screen flex-col">
-        <Navbar />
-
-        <section className="flex flex-1 items-center bg-gray-50 px-6 pb-32 pt-8 sm:px-10 md:px-12 md:pb-40 md:pt-12 lg:px-8">
-          <div className="mx-auto w-full max-w-7xl">
-          <div className="mx-auto mb-14 max-w-3xl text-center">
-            <span className="mb-4 inline-flex items-center gap-1 rounded-full border border-primary-100 bg-primary-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary-700">
-              <Sparkles className="h-3 w-3" />
-              {t('hero.eyebrow')}
-            </span>
-            <h1 className="text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
-              <span className="bg-gradient-to-br from-gray-900 via-gray-900 to-primary-700 bg-clip-text text-transparent">
-                {t('hero.title')}
-              </span>
-            </h1>
-          </div>
-
+      <section className="flex flex-1 items-center bg-gray-50 px-6 pb-32 pt-8 sm:px-10 md:px-12 md:pb-40 md:pt-12 lg:px-8">
+        <div className="mx-auto w-full max-w-7xl">
           <div className="mx-auto max-w-5xl">
-            {/* Tab switcher */}
             <div className="mb-6 flex justify-center">
               <div className="inline-flex rounded-xl bg-white p-1 shadow-sm">
                 {TABS.map((tab) => {
@@ -70,18 +68,17 @@ function App() {
             {activeTab === 'ideas' && <KeywordIdeasTab />}
             {activeTab === 'product' && <ProductKeywordsTab />}
           </div>
-          </div>
-        </section>
-      </div>
-
-      <KeywordToolContent />
-
-      <LearnMoreCta />
-
-      <Footer />
-    </div>
+        </div>
+      </section>
     </UsageGateProvider>
   );
 }
 
-export default App;
+export function BottomApp() {
+  return (
+    <>
+      <LearnMoreCta />
+      <Footer />
+    </>
+  );
+}
