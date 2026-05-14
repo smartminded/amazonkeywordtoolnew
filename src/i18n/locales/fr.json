@@ -123,7 +123,7 @@
   },
   "gate": {
     "title": "Débloquez les recherches illimitées",
-    "body": "Vous avez utilisé vos 5 recherches gratuites. Inscrivez-vous avec votre e-mail pour continuer, ou revenez la semaine prochaine.",
+    "body": "Vous avez utilisé vos deux recherches gratuites. Inscrivez-vous avec votre e-mail pour continuer, ou revenez la semaine prochaine.",
     "emailLabel": "Adresse e-mail",
     "emailPlaceholder": "vous@exemple.com",
     "unlockCta": "Débloquer les recherches illimitées",

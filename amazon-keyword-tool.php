@@ -241,7 +241,70 @@ class AmazonKeywordTool {
             <?php endif; ?>
         </head>
         <body class="amazon-keyword-tool">
+            <!-- React mount: navbar + hero + tool widget -->
             <div id="akt-root"></div>
+
+            <?php
+            /*
+             * Server-render the 7 marketing content articles so Google can
+             * crawl them without executing JavaScript. The translations come
+             * from the same locale JSONs the React app uses (deploy script
+             * copies them to assets/locales/ on the server).
+             */
+            $locale_path = plugin_dir_path(__FILE__) . 'assets/locales/' . $lang . '.json';
+            if (!file_exists($locale_path)) {
+                $locale_path = plugin_dir_path(__FILE__) . 'assets/locales/en.json';
+            }
+            $locale_data = file_exists($locale_path) ? json_decode(file_get_contents($locale_path), true) : array();
+            $content = isset($locale_data['content']) ? $locale_data['content'] : array();
+
+            $render_p = function ($raw) {
+                // Allow only <b> tags; everything else is escaped.
+                $escaped = esc_html($raw);
+                return str_replace(array('&lt;b&gt;', '&lt;/b&gt;'), array('<b>', '</b>'), $escaped);
+            };
+
+            // Image manifest mirrors what KeywordToolContent.jsx used to render.
+            $sections = array(
+                's1' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool-2.png',                              'pre' => array('p1','p2'), 'post' => array('p3')),
+                's2' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Competition_Levels-1.png',            'pre' => array('p1','p2','p3')),
+                's3' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_keyword_tools_search_volume_market_size-1.png',   'pre' => array('p1','p2')),
+                's4' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Get_Product_Keywords-1.png',          'pre' => array('p1')),
+                's5' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_marketplaces-1.png',                  'pre' => array('p1','p2')),
+                's6' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2026/01/Amazon_Keyword_Tool_Export_Results_max.png',                          'pre' => array('p1','p2')),
+                's7' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Create_a_Listing-2.png',              'pre' => array('p1'), 'post' => array('p2')),
+            );
+            ?>
+
+            <section class="bg-white px-6 py-16 sm:px-10 md:px-12 md:py-24 lg:px-8">
+                <div class="mx-auto max-w-3xl space-y-20 md:space-y-28">
+                    <?php foreach ($sections as $sid => $sdef): if (!isset($content[$sid])) continue; ?>
+                    <article>
+                        <h2 class="mb-6 text-2xl tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
+                            <?php echo esc_html($content[$sid]['h']); ?>
+                        </h2>
+                        <div class="space-y-4 text-base leading-relaxed text-gray-700 sm:text-lg">
+                            <?php foreach ($sdef['pre'] as $pkey): ?>
+                                <p><?php echo $render_p($content[$sid][$pkey]); ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="my-10 overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 shadow-sm">
+                            <img src="<?php echo esc_url($sdef['img']); ?>" alt="<?php echo esc_attr($content[$sid]['imgAlt']); ?>" loading="lazy" class="block w-full">
+                        </div>
+                        <?php if (!empty($sdef['post'])): ?>
+                        <div class="space-y-4 text-base leading-relaxed text-gray-700 sm:text-lg">
+                            <?php foreach ($sdef['post'] as $pkey): ?>
+                                <p><?php echo $render_p($content[$sid][$pkey]); ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                        <?php endif; ?>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+
+            <!-- React mount: LearnMoreCta + Footer -->
+            <div id="akt-bottom"></div>
 
             <script>
                 window.AKT_LANG = '<?php echo esc_js($lang); ?>';

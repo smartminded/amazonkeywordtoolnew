@@ -10,7 +10,20 @@
     <title>Amazon Keyword Tool</title>
   </head>
   <body>
+    <!-- React mount: navbar + hero + tool -->
     <div id="akt-root"></div>
+
+    <!--
+      In production, the WordPress plugin (amazon-keyword-tool.php) renders
+      the 7 marketing content articles as HTML right here so Google can
+      crawl them without executing JavaScript. Local dev shows just a
+      placeholder; the layout and interactivity above and below this region
+      match production.
+    -->
+
+    <!-- React mount: CTA + Footer -->
+    <div id="akt-bottom"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

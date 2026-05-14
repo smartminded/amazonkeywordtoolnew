@@ -123,7 +123,7 @@
   },
   "gate": {
     "title": "Desbloquea búsquedas ilimitadas",
-    "body": "Has usado tus 5 búsquedas gratuitas. Regístrate con tu email para seguir buscando, o vuelve la próxima semana.",
+    "body": "Has usado tus dos búsquedas gratuitas. Regístrate con tu email para seguir buscando, o vuelve la próxima semana.",
     "emailLabel": "Dirección de email",
     "emailPlaceholder": "tu@ejemplo.com",
     "unlockCta": "Desbloquear búsquedas ilimitadas",
