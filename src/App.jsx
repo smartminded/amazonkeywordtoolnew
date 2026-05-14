@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import KeywordIdeasTab from '@/components/KeywordIdeasTab';
 import ProductKeywordsTab from '@/components/ProductKeywordsTab';
 import KeywordToolContent from '@/components/KeywordToolContent';
+import Faq from '@/components/Faq';
 import LearnMoreCta from '@/components/LearnMoreCta';
 import UsageGateProvider from '@/components/UsageGateProvider';
 import './App.css';
@@ -37,6 +38,9 @@ function App() {
                 {t('hero.title')}
               </span>
             </h1>
+            <p className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-gray-600 sm:text-lg">
+              {t('hero.subtitle')}
+            </p>
           </div>
 
           <div className="mx-auto max-w-5xl">
@@ -75,6 +79,8 @@ function App() {
       </div>
 
       <KeywordToolContent />
+
+      <Faq />
 
       <LearnMoreCta />
 

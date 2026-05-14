@@ -35,7 +35,8 @@
   },
   "hero": {
     "eyebrow": "Gratuit · Sans inscription",
-    "title": "Trouvez les meilleurs mots-clés Amazon"
+    "title": "Outil Mots-Clés Amazon",
+    "subtitle": "Trouvez les meilleurs mots-clés Amazon avec volume, concurrence, CPC et tendances — gratuit, pour 22 marketplaces."
   },
   "tabs": {
     "ideas": "Trouver des idées de mots-clés",
@@ -123,7 +124,7 @@
   },
   "gate": {
     "title": "Débloquez les recherches illimitées",
-    "body": "Vous avez utilisé vos 5 recherches gratuites. Inscrivez-vous avec votre e-mail pour continuer, ou revenez la semaine prochaine.",
+    "body": "Vous avez utilisé vos deux recherches gratuites. Inscrivez-vous avec votre e-mail pour continuer, ou revenez la semaine prochaine.",
     "emailLabel": "Adresse e-mail",
     "emailPlaceholder": "vous@exemple.com",
     "unlockCta": "Débloquer les recherches illimitées",
@@ -139,6 +140,33 @@
     "title": "En savoir plus sur la vente sur Amazon",
     "subtitle": "Découvrez des stratégies d'experts, des guides détaillés et des tactiques éprouvées pour développer votre business Amazon. Lisez nos derniers articles et gardez une longueur d'avance.",
     "button": "Lire notre blog"
+  },
+  "faq": {
+    "heading": "Questions fréquentes sur l'Outil Mots-Clés Amazon",
+    "q1": {
+      "q": "Qu'est-ce que l'Outil Mots-Clés Amazon ?",
+      "a": "Notre Outil Mots-Clés Amazon est un outil gratuit de recherche de mots-clés pour les vendeurs Amazon. Saisissez un mot-clé de départ pour obtenir des centaines d'idées, ou saisissez un ASIN Amazon pour voir tous les mots-clés sur lesquels un produit concurrent se positionne. Chaque mot-clé est accompagné du volume de recherche, du niveau de concurrence, des tendances et du CPC."
+    },
+    "q2": {
+      "q": "L'Outil Mots-Clés Amazon est-il gratuit ?",
+      "a": "Oui — l'Outil Mots-Clés Amazon est 100% gratuit. Vous bénéficiez de deux recherches gratuites sans inscription ; ensuite vous pouvez débloquer des recherches illimitées en renseignant votre e-mail."
+    },
+    "q3": {
+      "q": "Comment fonctionne l'Outil Mots-Clés Amazon ?",
+      "a": "Nous combinons deux sources de données en direct. D'abord, nous récupérons un ensemble de base de mots-clés associés avec leur volume et leur CPC. Ensuite, nous enrichissons cet ensemble avec l'autosuggest live d'Amazon, afin que vous obteniez aussi les mots-clés de longue traîne réellement saisis par les acheteurs."
+    },
+    "q4": {
+      "q": "Quels marketplaces Amazon sont pris en charge ?",
+      "a": "L'Outil Mots-Clés Amazon prend en charge <b>22 marketplaces Amazon</b> incluant les États-Unis, le Royaume-Uni, l'Allemagne, la France, l'Italie, l'Espagne, le Canada, le Mexique, le Brésil, le Japon, l'Inde, l'Australie, Singapour, l'Arabie saoudite, les Émirats et plus. La recherche inversée par ASIN est disponible pour les États-Unis, les Émirats, l'Égypte et l'Arabie saoudite."
+    },
+    "q5": {
+      "q": "Puis-je exporter les résultats ?",
+      "a": "Oui. Cochez les mots-clés voulus et exportez-les en CSV en un clic, ou exportez l'ensemble des résultats sans rien cocher. Parfait pour alimenter vos campagnes PPC ou votre optimiseur de listing."
+    },
+    "q6": {
+      "q": "Les données de volume et de CPC sont-elles précises ?",
+      "a": "Les données proviennent directement de fournisseurs professionnels de données SEO et Amazon. Volume de recherche, concurrence et CPC correspondent aux chiffres utilisés par des outils payants comme Helium 10 et Jungle Scout — mis à jour en continu et gratuits ici."
+    }
   },
   "content": {
     "s1": {

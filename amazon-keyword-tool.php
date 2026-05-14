@@ -165,7 +165,13 @@ class AmazonKeywordTool {
 
             <script type="application/ld+json">
             <?php
-                $schema = array(
+                $publisher = array(
+                    '@type' => 'Organization',
+                    'name' => 'SMARTMINDED',
+                    'url' => home_url('/')
+                );
+
+                $web_app = array(
                     '@context' => 'https://schema.org',
                     '@type' => 'WebApplication',
                     'name' => 'Amazon Keyword Tool',
@@ -174,20 +180,82 @@ class AmazonKeywordTool {
                     'operatingSystem' => 'All',
                     'description' => $page_description,
                     'datePublished' => '2026-05-04',
-                    'dateModified' => '2026-05-11',
+                    'dateModified' => '2026-05-14',
                     'inLanguage' => $lang,
                     'offers' => array(
                         '@type' => 'Offer',
                         'price' => '0',
                         'priceCurrency' => 'USD'
                     ),
-                    'publisher' => array(
-                        '@type' => 'Organization',
-                        'name' => 'SMARTMINDED',
-                        'url' => home_url('/')
+                    'publisher' => $publisher
+                );
+                echo wp_json_encode($web_app, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+            ?>
+            </script>
+
+            <?php
+                // Load the locale-specific JSON so the FAQPage schema matches
+                // the visible FAQ rendered by the React component. The deploy
+                // script copies src/i18n/locales/*.json to assets/locales/ on
+                // the server. Fall back to English if the locale file is missing.
+                $locale_path = plugin_dir_path(__FILE__) . 'assets/locales/' . $lang . '.json';
+                if (!file_exists($locale_path)) {
+                    $locale_path = plugin_dir_path(__FILE__) . 'assets/locales/en.json';
+                }
+                $locale_data = json_decode(file_get_contents($locale_path), true);
+                $faq = isset($locale_data['faq']) ? $locale_data['faq'] : null;
+            ?>
+
+            <?php if ($faq): ?>
+            <!-- FAQPage schema: mirrors the visible FAQ section so Google can render rich SERP results. -->
+            <script type="application/ld+json">
+            <?php
+                $faq_entities = array();
+                foreach (array('q1', 'q2', 'q3', 'q4', 'q5', 'q6') as $qid) {
+                    if (!isset($faq[$qid])) continue;
+                    $faq_entities[] = array(
+                        '@type' => 'Question',
+                        'name' => $faq[$qid]['q'],
+                        'acceptedAnswer' => array(
+                            '@type' => 'Answer',
+                            // Strip the <b> tags from the translation so the answer is plain text.
+                            'text' => strip_tags($faq[$qid]['a'])
+                        )
+                    );
+                }
+                $faq_schema = array(
+                    '@context' => 'https://schema.org',
+                    '@type' => 'FAQPage',
+                    'inLanguage' => $lang,
+                    'mainEntity' => $faq_entities
+                );
+                echo wp_json_encode($faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+            ?>
+            </script>
+            <?php endif; ?>
+
+            <!-- BreadcrumbList schema: helps SERP appearance with the home → tool breadcrumb trail. -->
+            <script type="application/ld+json">
+            <?php
+                $breadcrumb = array(
+                    '@context' => 'https://schema.org',
+                    '@type' => 'BreadcrumbList',
+                    'itemListElement' => array(
+                        array(
+                            '@type' => 'ListItem',
+                            'position' => 1,
+                            'name' => 'Home',
+                            'item' => home_url('/' . ($lang === 'de' ? '' : $lang . '/'))
+                        ),
+                        array(
+                            '@type' => 'ListItem',
+                            'position' => 2,
+                            'name' => 'Amazon Keyword Tool',
+                            'item' => $canonical
+                        )
                     )
                 );
-                echo wp_json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+                echo wp_json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
             ?>
             </script>
 

@@ -35,7 +35,8 @@
   },
   "hero": {
     "eyebrow": "Free · No Sign-up",
-    "title": "Find The Best Amazon Keywords"
+    "title": "Amazon Keyword Tool",
+    "subtitle": "Find the best Amazon keywords with free search volume, competition, CPC and trend data for 22 marketplaces."
   },
   "tabs": {
     "ideas": "Get Keyword Ideas",
@@ -123,7 +124,7 @@
   },
   "gate": {
     "title": "Unlock unlimited searches",
-    "body": "You've used your 5 free searches. Sign up with your email to keep searching, or come back next week.",
+    "body": "You've used your two free searches. Sign up with your email to keep searching, or come back next week.",
     "emailLabel": "Email address",
     "emailPlaceholder": "you@example.com",
     "unlockCta": "Unlock unlimited searches",
@@ -139,6 +140,33 @@
     "title": "Learn More About Amazon Selling",
     "subtitle": "Discover expert strategies, in-depth guides, and proven tactics to grow your Amazon business. Read our latest articles and stay ahead of the competition.",
     "button": "Read Our Blog"
+  },
+  "faq": {
+    "heading": "Frequently asked questions about the Amazon Keyword Tool",
+    "q1": {
+      "q": "What is the Amazon Keyword Tool?",
+      "a": "Our Amazon Keyword Tool is a free keyword research tool for Amazon sellers. Type in a seed keyword to get hundreds of keyword ideas, or type in an Amazon ASIN to see every keyword a competitor product ranks for. Every keyword comes with search volume, competition level, trend data and CPC."
+    },
+    "q2": {
+      "q": "Is the Amazon Keyword Tool free?",
+      "a": "Yes — the Amazon Keyword Tool is 100% free. You get two free searches without signing up; after that you can unlock unlimited searches by entering your email address."
+    },
+    "q3": {
+      "q": "How does the Amazon Keyword Tool work?",
+      "a": "We combine two live data sources. First we pull a base set of related keywords with search volume and CPC. Then we expand that set with Amazon's own live autosuggest data so you also get the long-tail keywords real shoppers type into the Amazon search bar."
+    },
+    "q4": {
+      "q": "Which Amazon marketplaces does the tool support?",
+      "a": "The Amazon Keyword Tool supports <b>22 Amazon marketplaces</b> including the US, UK, Germany, France, Italy, Spain, Canada, Mexico, Brazil, Japan, India, Australia, Singapore, Saudi Arabia, UAE and more. Reverse-ASIN lookups are available for the US, UAE, Egypt and Saudi Arabia."
+    },
+    "q5": {
+      "q": "Can I export the keyword results?",
+      "a": "Yes. Tick the keywords you want and export them as a CSV with one click, or export the full result set without selecting anything. Perfect for feeding the keywords into your PPC campaigns or listing optimizer."
+    },
+    "q6": {
+      "q": "How accurate is the search volume and CPC data?",
+      "a": "The data comes directly from professional SEO and Amazon data providers. Search volume, competition and CPC are the same numbers paid tools like Helium 10 and Jungle Scout use — refreshed continuously and free for you to use here."
+    }
   },
   "content": {
     "s1": {

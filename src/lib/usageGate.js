@@ -8,7 +8,7 @@
 import { useCallback, useState } from 'react';
 
 const KEY = 'akt-usage-v1';
-export const FREE_LIMIT = 5;
+export const FREE_LIMIT = 2;
 export const LOCK_DURATION_MS = 7 * 24 * 60 * 60 * 1000; // 1 week
 
 function defaultState() {
