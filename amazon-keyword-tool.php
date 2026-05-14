@@ -299,8 +299,9 @@ class AmazonKeywordTool {
                 <!-- Navbar mount (React) -->
                 <div id="akt-navbar"></div>
 
-                <!-- Centered above-the-fold block: hero + tool mount are stacked and vertically centered together. -->
-                <div class="flex flex-1 flex-col justify-center bg-gray-50">
+                <!-- Above-the-fold block: hero + tool mount stacked with a fixed viewport-based top padding
+                     so the hero stays put when results load instead of re-centering and jumping. -->
+                <div class="flex-1 bg-gray-50 pt-[15vh] md:pt-[18vh]">
                     <!-- Static hero (server-rendered for SEO; H1 + eyebrow). -->
                     <header class="px-6 sm:px-10 md:px-12 lg:px-8">
                         <div class="mx-auto max-w-7xl">
