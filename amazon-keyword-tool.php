@@ -294,31 +294,34 @@ class AmazonKeywordTool {
             );
             ?>
 
-            <!-- Navbar mount (React) -->
-            <div id="akt-navbar"></div>
+            <!-- Above-the-fold wrapper: navbar + hero + tool fill at least one viewport height. -->
+            <div class="flex min-h-screen flex-col">
+                <!-- Navbar mount (React) -->
+                <div id="akt-navbar"></div>
 
-            <!-- Static hero (server-rendered for SEO; H1 + eyebrow). Visual styling matches the previous React hero exactly. -->
-            <header class="bg-gray-50 px-6 pt-8 pb-0 sm:px-10 md:px-12 md:pt-12 lg:px-8">
-                <div class="mx-auto max-w-7xl">
-                    <div class="mx-auto max-w-3xl text-center">
-                        <span class="mb-4 inline-flex items-center gap-1 rounded-full border border-primary-100 bg-primary-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.813 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.813a2 2 0 0 1 1.287-1.288L21 12l-5.813-1.9a2 2 0 0 1-1.288-1.287Z"/>
-                                <path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>
-                            </svg>
-                            <?php echo esc_html(isset($hero['eyebrow']) ? $hero['eyebrow'] : ''); ?>
-                        </span>
-                        <h1 class="text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
-                            <span class="bg-gradient-to-br from-gray-900 via-gray-900 to-primary-700 bg-clip-text text-transparent">
-                                <?php echo esc_html(isset($hero['title']) ? $hero['title'] : ''); ?>
+                <!-- Static hero (server-rendered for SEO; H1 + eyebrow). Visual styling matches the previous React hero exactly. -->
+                <header class="bg-gray-50 px-6 pt-8 pb-0 sm:px-10 md:px-12 md:pt-12 lg:px-8">
+                    <div class="mx-auto max-w-7xl">
+                        <div class="mx-auto max-w-3xl text-center">
+                            <span class="mb-4 inline-flex items-center gap-1 rounded-full border border-primary-100 bg-primary-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.813 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.813a2 2 0 0 1 1.287-1.288L21 12l-5.813-1.9a2 2 0 0 1-1.288-1.287Z"/>
+                                    <path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>
+                                </svg>
+                                <?php echo esc_html(isset($hero['eyebrow']) ? $hero['eyebrow'] : ''); ?>
                             </span>
-                        </h1>
+                            <h1 class="text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+                                <span class="bg-gradient-to-br from-gray-900 via-gray-900 to-primary-700 bg-clip-text text-transparent">
+                                    <?php echo esc_html(isset($hero['title']) ? $hero['title'] : ''); ?>
+                                </span>
+                            </h1>
+                        </div>
                     </div>
-                </div>
-            </header>
+                </header>
 
-            <!-- Tool mount (React with UsageGateProvider for the email gate modal) -->
-            <div id="akt-tool"></div>
+                <!-- Tool mount (React with UsageGateProvider for the email gate modal). flex-1 so the section inside fills the remaining viewport. -->
+                <div id="akt-tool" class="flex flex-1 flex-col"></div>
+            </div>
 
             <!-- Static long-form content (server-rendered for SEO; H2s + paragraphs + images). -->
             <section class="bg-white px-6 py-16 sm:px-10 md:px-12 md:py-24 lg:px-8">
