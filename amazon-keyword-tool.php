@@ -279,8 +279,9 @@ class AmazonKeywordTool {
                 's3' => array('img' => $screenshot('Amazon_Keyword_Tool_List_Overview_Search_Volume_Market_Size.png'), 'pre' => array('p1','p2')),
                 's4' => array('img' => $screenshot('Amazon_Keyword_Tool_Overview_Reverse_ASIN.png'),                 'pre' => array('p1')),
                 's5' => array('img' => $screenshot('Amazon_Keyword_Marketplace_Overview.png'),                       'pre' => array('p1','p2')),
-                's6' => array('img' => $screenshot('Amazon_Keyword_List_Export.png'),                                'pre' => array('p1','p2')),
-                's7' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Create_a_Listing-2.png', 'pre' => array('p1'), 'post' => array('p2')),
+                // Image sits between p1 and p2 so the page ends on the bullet-list paragraph (p2).
+                's6' => array('img' => $screenshot('Amazon_Keyword_List_Export.png'),                                'pre' => array('p1'), 'post' => array('p2')),
+                // s7 (listing optimisation) removed — that feature is no longer available.
             );
             ?>
 
