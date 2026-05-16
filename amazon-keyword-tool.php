@@ -267,8 +267,11 @@ class AmazonKeywordTool {
             // Image manifest. s1–s6 use the screenshots shipped with the plugin
             // (deploy script copies src/assets/screenshots/ → assets/screenshots/).
             // s7 still uses the legacy WP-media image for the listing generator.
-            $screenshot = function ($file) {
-                return plugins_url('assets/screenshots/' . $file, __FILE__);
+            // Plugin version is appended as a query string so each deploy busts
+            // browser + CDN caches even though the filenames don't change.
+            $version = $this->version;
+            $screenshot = function ($file) use ($version) {
+                return plugins_url('assets/screenshots/' . $file, __FILE__) . '?v=' . $version;
             };
             $sections = array(
                 's1' => array('img' => $screenshot('Amazon_Keyword_Tool_Overview.png'),                              'pre' => array('p1','p2'), 'post' => array('p3')),
