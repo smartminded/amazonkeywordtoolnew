@@ -31,7 +31,7 @@ echo ""
 
 # Ensure remote directories exist
 echo "📁 Ensuring remote directories exist..."
-ssh $SSH_USER@$SSH_HOST "mkdir -p $REMOTE_PLUGIN_PATH/assets/css $REMOTE_PLUGIN_PATH/assets/js $REMOTE_PLUGIN_PATH/assets/locales"
+ssh $SSH_USER@$SSH_HOST "mkdir -p $REMOTE_PLUGIN_PATH/assets/css $REMOTE_PLUGIN_PATH/assets/js $REMOTE_PLUGIN_PATH/assets/locales $REMOTE_PLUGIN_PATH/assets/screenshots"
 
 if [ $? -ne 0 ]; then
     echo "❌ Failed to create remote directories!"
@@ -78,6 +78,15 @@ scp src/i18n/locales/*.json $SSH_USER@$SSH_HOST:$REMOTE_PLUGIN_PATH/assets/local
 
 if [ $? -ne 0 ]; then
     echo "❌ Locale upload failed!"
+    exit 1
+fi
+
+# Deploy content-section screenshots referenced by the PHP-rendered <article>s.
+echo "📸 Uploading content screenshots..."
+scp src/assets/screenshots/*.png $SSH_USER@$SSH_HOST:$REMOTE_PLUGIN_PATH/assets/screenshots/
+
+if [ $? -ne 0 ]; then
+    echo "❌ Screenshot upload failed!"
     exit 1
 fi
 

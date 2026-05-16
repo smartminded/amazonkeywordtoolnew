@@ -264,15 +264,20 @@ class AmazonKeywordTool {
                 return str_replace(array('&lt;b&gt;', '&lt;/b&gt;'), array('<b>', '</b>'), $escaped);
             };
 
-            // Image manifest mirrors what KeywordToolContent.jsx used to render.
+            // Image manifest. s1–s6 use the screenshots shipped with the plugin
+            // (deploy script copies src/assets/screenshots/ → assets/screenshots/).
+            // s7 still uses the legacy WP-media image for the listing generator.
+            $screenshot = function ($file) {
+                return plugins_url('assets/screenshots/' . $file, __FILE__);
+            };
             $sections = array(
-                's1' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool-2.png',                              'pre' => array('p1','p2'), 'post' => array('p3')),
-                's2' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Competition_Levels-1.png',            'pre' => array('p1','p2','p3')),
-                's3' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_keyword_tools_search_volume_market_size-1.png',   'pre' => array('p1','p2')),
-                's4' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Get_Product_Keywords-1.png',          'pre' => array('p1')),
-                's5' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_marketplaces-1.png',                  'pre' => array('p1','p2')),
-                's6' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2026/01/Amazon_Keyword_Tool_Export_Results_max.png',                          'pre' => array('p1','p2')),
-                's7' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Create_a_Listing-2.png',              'pre' => array('p1'), 'post' => array('p2')),
+                's1' => array('img' => $screenshot('Amazon_Keyword_Tool_Overview.png'),                              'pre' => array('p1','p2'), 'post' => array('p3')),
+                's2' => array('img' => $screenshot('Amazon_Keyword_Tool_List_Overview_Competition.png'),            'pre' => array('p1','p2','p3')),
+                's3' => array('img' => $screenshot('Amazon_Keyword_Tool_List_Overview_Search_Volume_Market_Size.png'), 'pre' => array('p1','p2')),
+                's4' => array('img' => $screenshot('Amazon_Keyword_Tool_Overview_Reverse_ASIN.png'),                 'pre' => array('p1')),
+                's5' => array('img' => $screenshot('Amazon_Keyword_Marketplace_Overview.png'),                       'pre' => array('p1','p2')),
+                's6' => array('img' => $screenshot('Amazon_Keyword_List_Export.png'),                                'pre' => array('p1','p2')),
+                's7' => array('img' => 'https://www.smart-minded.com/wp-content/uploads/2025/10/smartminded_Amazon_Keyword_Tool_Create_a_Listing-2.png', 'pre' => array('p1'), 'post' => array('p2')),
             );
             ?>
 
