@@ -38,15 +38,15 @@
     "title": "Finde die besten Amazon Keywords"
   },
   "tabs": {
-    "ideas": "Keyword-Ideen finden",
-    "product": "Produkt-Keywords finden"
+    "ideas": "Ideen für Keywords finden",
+    "product": "Keywords von Produkten finden"
   },
   "tool": {
     "marketplace": "Marktplatz",
     "search": "Suchen",
     "loading": "Das kann einen Moment dauern – wir holen die genauesten Live-Daten...",
     "seed": {
-      "label": "Seed-Keyword",
+      "label": "Seed Keyword",
       "placeholder": "z.B. kabellose Kopfhörer"
     },
     "asin": {
@@ -92,7 +92,7 @@
     },
     "empty": {
       "title": "Keine Keywords gefunden",
-      "body": "Wir konnten für diese Eingabe auf diesem Marktplatz keine Keywords finden. Probiere ein allgemeineres Seed-Keyword oder einen anderen Marktplatz.",
+      "body": "Wir konnten für diese Eingabe auf diesem Marktplatz keine Keywords finden. Probiere ein allgemeineres Seed Keyword oder einen anderen Marktplatz.",
       "retry": "Erneut versuchen"
     },
     "error": {
@@ -142,38 +142,38 @@
   },
   "content": {
     "s1": {
-      "h": "Finde die besten Keywords für deine Amazon-Produkte",
-      "p1": "Du weißt nicht, wonach Käufer in der Amazon-Suchleiste suchen, um deine Produkte zu finden? Kein Problem mit unserem kostenlosen Amazon Keyword Tool.",
-      "p2": "Du kannst die Funktion <b>Keyword-Ideen finden</b> unseres Amazon Keyword Tools verwenden und ein Seed-Keyword eingeben, um Hunderte Keyword-Ideen zu erhalten – oder du suchst nach den Keywords, für die andere Amazon-Produkte ranken. Für Letzteres gibst du einfach die ASIN eines beliebigen Amazon-Produkts ein und siehst alle Keywords, für die dieses Produkt auf Amazon rankt.",
-      "p3": "Zu jedem Keyword erhältst du detaillierte Daten zu Suchvolumen, Wettbewerbsniveau, Trends und CPC. Egal ob du deine zukünftige Keyword-Strategie planen oder eine laufende PPC-Kampagne optimieren möchtest – unser Amazon Keyword Tool ist mit Abstand das umfassendste <b>kostenlose</b> Keyword-Tool für Amazon-Verkäufer.",
+      "h": "Finde die besten Keywords für deine Amazon Produkte",
+      "p1": "Du weißt nicht, wonach Käufer auf Amazon suchen, um deine Produkte zu finden? Kein Problem mit unserem kostenlosen Amazon Keyword Tool.",
+      "p2": "Du kannst die Funktion <b>Ideen für Keywords finden</b> unseres Amazon Keyword Tools verwenden und ein Seed Keyword eingeben, um Hunderte Keyword-Ideen zu erhalten – oder du suchst nach den Keywords, für die andere Amazon Produkte ranken. Für Letzteres gibst du einfach die ASIN eines beliebigen Amazon-Produkts ein und siehst alle Keywords, für die dieses Produkt auf Amazon rankt.",
+      "p3": "Zu jedem Keyword erhältst du detaillierte Daten zu Suchvolumen, Wettbewerbsniveau, Trends und CPC. Egal ob du deine zukünftige Keyword-Strategie planen oder eine laufende PPC-Kampagne optimieren möchtest – unser Amazon Keyword Tool ist mit Abstand das umfassendste <b>kostenlose</b> Keyword-Tool für Amazon Händler.",
       "imgAlt": "Amazon Keyword Tool Suchergebnisse"
     },
     "s2": {
       "h": "Genaue Metriken für Keywords mit hohem Potenzial",
       "p1": "Wenn du auf Amazon erfolgreich sein willst, musst du Keywords mit niedrigem Wettbewerb und hoher Conversion-Rate finden. Stell dir vor, du verkaufst eine blaue Trinkflasche. Personen, die nach einer blauen Trinkflasche suchen, werden dein Produkt eher kaufen als Personen, die nur allgemein nach einer Trinkflasche suchen.",
-      "p2": "Nutze unser Tool clever und versuche, möglichst spezifische Amazon-Keywords zu finden – das sind die Keywords, die deinem Business tatsächlich Kunden bringen.",
-      "p3": "Verwende außerdem unsere Metriken, um Keywords mit niedrigem Wettbewerb zu finden. Schau dir zum Beispiel das Wettbewerbsniveau eines Keywords über unseren Wettbewerbsindikator an. Dieser zeigt dir, ob ein Keyword „Niedrig\", „Mittel\" oder „Hoch\" im Wettbewerb steht – ein guter Ausgangspunkt für deine Amazon Keyword-Recherche.",
+      "p2": "Nutze unser Tool clever und versuche, möglichst spezifische Amazon Keywords zu finden – das sind die Keywords, die deinem Business tatsächlich Kunden bringen.",
+      "p3": "Verwende außerdem unsere Metriken, um Keywords mit niedrigem Wettbewerb zu finden. Schau dir zum Beispiel das Wettbewerbsniveau eines Keywords über unseren Wettbewerbsindikator an. Dieser zeigt dir, ob ein Keyword „Niedrig\", „Mittel\" oder „Hoch\" im Wettbewerb steht – ein guter Ausgangspunkt für deine Amazon Keyword Recherche.",
       "imgAlt": "Amazon Keyword Tool Filter"
     },
     "s3": {
       "h": "Genaue Daten zum Suchvolumen von Keywords",
-      "p1": "Wenn du Amazon-Keywords suchst, willst du natürlich wissen, wie oft diese Keywords pro Monat gesucht werden. Ein Keyword, das nur 10-mal pro Monat gesucht wird, hat für dein Business weniger Bedeutung als eines, das 100- oder 1000-mal pro Monat gesucht wird.",
-      "p2": "Doch nicht nur das Suchvolumen ist für dich als Amazon-Verkäufer wichtig. Auch die Marktgröße spielt eine entscheidende Rolle. Generiert ein Keyword keine Verkäufe, bringt es deinem Business nichts. Achte deshalb darauf, Keywords mit ordentlicher Marktgröße zu wählen, die auch Verkäufe erzeugen. Wirf dazu einen Blick auf unseren Marktgrößen-Indikator.",
+      "p1": "Wenn du Amazon Keywords suchst, willst du natürlich wissen, wie oft diese Keywords pro Monat gesucht werden. Ein Keyword, das nur 10-mal pro Monat gesucht wird, hat für dein Business weniger Bedeutung als eines, das 100- oder 1000-mal pro Monat gesucht wird.",
+      "p2": "Doch nicht nur das Suchvolumen ist für dich als Amazon Händler wichtig. Auch die Marktgröße spielt eine entscheidende Rolle. Generiert ein Keyword keine Verkäufe, bringt es deinem Business nichts. Achte deshalb darauf, Keywords mit ordentlicher Marktgröße zu wählen, die auch Verkäufe erzeugen. Wirf dazu einen Blick auf unseren Indikator für Marktgrößen.",
       "imgAlt": "Amazon Keyword Tool Metriken"
     },
     "s4": {
       "h": "Finde die Keywords, für die deine Konkurrenten ranken",
-      "p1": "Mit unserem <b>Amazon Keyword Tool</b> kannst du nicht nur Keywords auf Basis eines Seed-Keywords finden. Du kannst auch die Keywords entdecken, für die deine Konkurrenten auf Amazon ranken. Du brauchst lediglich die ASIN eines Amazon-Produkts einzugeben – das Tool zeigt dir alle Keywords, für die dieses Produkt auf Amazon rankt.",
+      "p1": "Mit unserem <b>Amazon Keyword Tool</b> kannst du nicht nur Keywords auf Basis eines Seed Keywords finden. Du kannst auch die Keywords entdecken, für die deine Konkurrenten auf Amazon ranken. Du brauchst lediglich die ASIN eines Amazon-Produkts einzugeben – das Tool zeigt dir alle Keywords, für die dieses Produkt auf Amazon rankt.",
       "imgAlt": "Optimiertes Amazon Produktlisting"
     },
     "s5": {
-      "h": "Amazon Keyword-Recherche für nahezu jeden Marktplatz",
+      "h": "Amazon Keyword Recherche für nahezu jeden Marktplatz",
       "p1": "Dein Business muss sich nicht durch Grenzen einschränken lassen. Egal, ob du dein Amazon-Business in etablierten Märkten wie den USA skalierst oder in aufstrebende Märkte vordringst – unser Amazon Keyword Tool liefert dir die Daten, die du brauchst.",
-      "p2": "Mit Unterstützung für <b>22 Amazon-Marktplätze</b> verschafft dir unser Tool einen Wettbewerbsvorteil, indem es dir zeigt, wonach Kunden auf Amazon suchen – ganz gleich, wo auf der Welt sie sich befinden.",
+      "p2": "Mit Unterstützung für <b>22 Amazon Marktplätze</b> verschafft dir unser Tool einen Wettbewerbsvorteil, indem es dir zeigt, wonach Kunden auf Amazon suchen – ganz gleich, wo auf der Welt sie sich befinden.",
       "imgAlt": "Amazon Marktplätze"
     },
     "s6": {
-      "h": "Exportiere die Keyword-Ergebnisse deiner Recherche",
+      "h": "Exportiere die Ergebnisse deiner Recherche",
       "p1": "Verliere nie wieder wertvolle Insights. Mit unserer integrierten Export-Funktion kannst du deine Keywords für künftige Strategie-Sessions speichern oder deinen Workflow nahtlos mit anderen Drittanbieter-Tools verknüpfen.",
       "p2": "Ob du nur eine spezifische Auswahl oder alle recherchierten Keywords brauchst – du hast zwei Möglichkeiten: hak einfach deine bevorzugten Keywords für einen individuellen Export an oder lade die komplette Liste mit einem einzigen Klick herunter.",
       "imgAlt": "Keyword-Ergebnisse exportieren"

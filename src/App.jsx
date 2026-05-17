@@ -20,8 +20,11 @@ const TABS = [
 ];
 
 export function TopApp() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeTab, setActiveTab] = useState('ideas');
+  // The German title is just long enough to wrap into 2 lines at the
+  // lg breakpoint; pin it to one line for de only.
+  const isGerman = i18n.language === 'de';
 
   return (
     <UsageGateProvider>
@@ -36,7 +39,12 @@ export function TopApp() {
                   <Sparkles className="h-3 w-3" />
                   {t('hero.eyebrow')}
                 </span>
-                <h1 className="text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl">
+                <h1
+                  className={
+                    'text-balance text-3xl leading-[1.05] tracking-[-0.03em] text-gray-900 sm:text-3xl md:text-4xl lg:text-5xl' +
+                    (isGerman ? ' sm:whitespace-nowrap' : '')
+                  }
+                >
                   <span className="bg-gradient-to-br from-gray-900 via-gray-900 to-primary-700 bg-clip-text text-transparent">
                     {t('hero.title')}
                   </span>
