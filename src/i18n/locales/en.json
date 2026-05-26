@@ -34,7 +34,7 @@
     "business": "https://www.smart-minded.com/en/business/"
   },
   "hero": {
-    "eyebrow": "Free · No Sign-up",
+    "eyebrow": "100% Free Forever",
     "title": "Find The Best Amazon Keywords"
   },
   "tabs": {
@@ -123,9 +123,15 @@
   },
   "gate": {
     "title": "Unlock unlimited searches",
-    "body": "You've used your two free searches. Sign up with your email to keep searching, or come back next week.",
+    "body": "Unlimited keyword research, free forever. Enter your email to unlock:",
+    "benefits": [
+      "Up to 1,800 keywords per search",
+      "Live data for 22 Amazon marketplaces",
+      "Export results to CSV in one click"
+    ],
     "emailLabel": "Email address",
     "emailPlaceholder": "you@example.com",
+    "trust": "No spam. Unsubscribe anytime.",
     "unlockCta": "Unlock unlimited searches",
     "submitting": "Unlocking…",
     "waitNote": "Free access resumes on {{date}}.",

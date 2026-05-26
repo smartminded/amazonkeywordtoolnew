@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Lock, Mail, X, Sparkles } from 'lucide-react';
+import { Check, Lock, Mail, X, Sparkles } from 'lucide-react';
 
 export default function UsageLockModal({ lockedUntil, onSubmitEmail, onClose }) {
   const { t, i18n } = useTranslation();
@@ -53,6 +53,11 @@ export default function UsageLockModal({ lockedUntil, onSubmitEmail, onClose }) 
     ? new Intl.DateTimeFormat(i18n.language, { dateStyle: 'long', timeStyle: 'short' }).format(lockedUntil)
     : null;
 
+  // Locale provides an array of 2-3 benefits to surface inside the modal.
+  // returnObjects: true is the react-i18next idiom for non-string values.
+  const benefits = t('gate.benefits', { returnObjects: true });
+  const benefitList = Array.isArray(benefits) ? benefits : [];
+
   return (
     <div
       role="dialog"
@@ -86,9 +91,20 @@ export default function UsageLockModal({ lockedUntil, onSubmitEmail, onClose }) 
           <h2 id="usage-lock-title" className="mb-2 text-2xl tracking-tight text-gray-900">
             {t('gate.title')}
           </h2>
-          <p className="mb-6 text-sm leading-relaxed text-gray-600">
+          <p className="mb-4 text-sm leading-relaxed text-gray-700">
             {t('gate.body')}
           </p>
+
+          {benefitList.length > 0 && (
+            <ul className="mb-6 space-y-2">
+              {benefitList.map((b, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                  <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-600" aria-hidden />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          )}
 
           <form onSubmit={handleSubmit} noValidate>
             <label className="mb-2 flex items-center text-sm font-medium text-gray-700">
@@ -103,6 +119,7 @@ export default function UsageLockModal({ lockedUntil, onSubmitEmail, onClose }) 
               placeholder={t('gate.emailPlaceholder')}
               className="w-full rounded-lg border border-gray-200 bg-white px-3 py-2.5 text-sm text-gray-800 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-100"
             />
+            <p className="mt-1.5 text-xs text-gray-500">{t('gate.trust')}</p>
             {error && (
               <p className="mt-2 text-xs text-red-600">{t(`gate.error.${error}`)}</p>
             )}

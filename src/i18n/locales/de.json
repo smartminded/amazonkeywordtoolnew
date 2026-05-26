@@ -34,7 +34,7 @@
     "business": "https://www.smart-minded.com/business/"
   },
   "hero": {
-    "eyebrow": "Kostenlos · Ohne Anmeldung",
+    "eyebrow": "Für immer 100% kostenlos",
     "title": "Finde die besten Amazon Keywords"
   },
   "tabs": {
@@ -123,9 +123,15 @@
   },
   "gate": {
     "title": "Unbegrenzte Suchen freischalten",
-    "body": "Du hast deine zwei kostenlosen Suchen aufgebraucht. Melde dich mit deiner E-Mail-Adresse an, um weiterzusuchen – oder komm in einer Woche wieder.",
+    "body": "Unbegrenzte Keyword-Recherche, für immer kostenlos. Gib deine E-Mail-Adresse ein, um freizuschalten:",
+    "benefits": [
+      "Bis zu 1.800 Keywords pro Suche",
+      "Live-Daten für 22 Amazon Marktplätze",
+      "Ergebnisse mit einem Klick als CSV exportieren"
+    ],
     "emailLabel": "E-Mail-Adresse",
     "emailPlaceholder": "du@beispiel.de",
+    "trust": "Kein Spam. Jederzeit abbestellen.",
     "unlockCta": "Unbegrenzte Suchen freischalten",
     "submitting": "Wird freigeschaltet…",
     "waitNote": "Der freie Zugang ist wieder ab dem {{date}} verfügbar.",

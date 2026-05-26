@@ -34,7 +34,7 @@
     "business": "https://www.smart-minded.com/es/blog/"
   },
   "hero": {
-    "eyebrow": "Gratis · Sin registro",
+    "eyebrow": "100% gratis, para siempre",
     "title": "Encuentra las mejores palabras clave de Amazon"
   },
   "tabs": {
@@ -123,9 +123,15 @@
   },
   "gate": {
     "title": "Desbloquea búsquedas ilimitadas",
-    "body": "Has usado tus dos búsquedas gratuitas. Regístrate con tu email para seguir buscando, o vuelve la próxima semana.",
+    "body": "Investigación de palabras clave ilimitada, gratis para siempre. Introduce tu email para desbloquear:",
+    "benefits": [
+      "Hasta 1.800 palabras clave por búsqueda",
+      "Datos en vivo para 22 marketplaces de Amazon",
+      "Exportación a CSV con un clic"
+    ],
     "emailLabel": "Dirección de email",
     "emailPlaceholder": "tu@ejemplo.com",
+    "trust": "Sin spam. Cancela la suscripción cuando quieras.",
     "unlockCta": "Desbloquear búsquedas ilimitadas",
     "submitting": "Desbloqueando…",
     "waitNote": "El acceso gratuito se reanuda el {{date}}.",
