@@ -15,7 +15,7 @@ export default function HeliumPartnerBanner() {
         </div>
       </div>
       <a
-        href="https://helium10.pxf.io/jeLWqP"
+        href="https://i.helium10.com/m4EPje"
         target="_blank"
         rel="noopener noreferrer sponsored"
         className="group relative inline-flex w-full flex-shrink-0 items-center justify-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-orange-500/30 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 sm:w-44"

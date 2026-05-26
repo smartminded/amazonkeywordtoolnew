@@ -94,7 +94,7 @@ export default function ProductKeywordsTab() {
         </div>
       </div>
 
-      {(loading || error || rows !== null) && <HeliumPartnerBanner />}
+      {gate.isUnlimited && (loading || error || rows !== null) && <HeliumPartnerBanner />}
 
       {loading && <LoadingState />}
 

@@ -90,7 +90,7 @@ export default function KeywordIdeasTab() {
         </div>
       </div>
 
-      {(loading || error || rows !== null) && <HeliumPartnerBanner />}
+      {gate.isUnlimited && (loading || error || rows !== null) && <HeliumPartnerBanner />}
 
       {warning && <PartialWarning kind={warning} />}
 
